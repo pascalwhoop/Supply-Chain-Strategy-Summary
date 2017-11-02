@@ -8,6 +8,7 @@
   <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <link rel="stylesheet" href="assets/foghorn.css"/>
+  <link rel="stylesheet" href="assets/custom.css">
 </head>
 <body>
 <h1 id="supply-chain-strategy-summary">Supply Chain Strategy summary</h1>
@@ -27,7 +28,7 @@
 </ul></li>
 <li>to build a html website from the markdown one may use <code>npm build</code></li>
 </ul>
-<p>To install pandoc and latex on Linux one may use: `sudo apt install pandoc texlive-latex-base To use math, just use the normal latex notation.</p>
+<p>To install pandoc and latex on Linux one may use: <code>sudo apt install pandoc texlive-latex-base</code> To use math, just use the normal latex notation.</p>
 <p><code>\\( f(x) = 2x \\)</code> for inline \( f(x) = 2x \)</p>
 <p>and for block size math</p>
 <pre><code>$$ f(x) = sin(x) $$</code></pre>
@@ -37,9 +38,125 @@
 <h2 id="chapter-2">Chapter 2:</h2>
 <h2 id="chapter-3">Chapter 3:</h2>
 <h2 id="chapter-4">Chapter 4:</h2>
-<h2 id="chapter-5">Chapter 5:</h2>
-<h2 id="chapter-6">Chapter 6:</h2>
-<h2 id="chapter-7">Chapter 7:</h2>
+<h2 id="chapter-5-6-simulation">Chapter 5 &amp; 6: Simulation</h2>
+<h2 id="chapter-7-capacity-strategy">Chapter 7: Capacity Strategy</h2>
+<p>The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the scope is &quot;long term&quot;, the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of additional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.</p>
+<p><strong>Key determinants of capacity strategy include:</strong></p>
+<ul>
+<li>Demand Growth Curve</li>
+<li>Demand Growth Curve</li>
+<li>Uncertainty</li>
+<li>Scale Economies (Capacity &amp; Production)</li>
+<li>Time Value of Money</li>
+<li>Learning Curves</li>
+<li>Technology Roadmaps</li>
+<li>Access to Capital</li>
+<li>Supply Base</li>
+<li>Customer Stickiness</li>
+<li>Competitor Actions</li>
+</ul>
+<div class="figure">
+<img src="images/2.png" />
+
+</div>
+<ul>
+<li><strong>Bottleneck</strong>: slowest process in system</li>
+<li><strong>Throughput</strong>: Number of items that leave system per time University</li>
+<li><strong>Capacity</strong>: max throughput of system</li>
+</ul>
+<h3 id="forecasts">Forecasts</h3>
+<p><strong>Principle 1:</strong> Always include in forecast derivation process</p>
+<ul>
+<li>Demand</li>
+<li>Supply</li>
+<li>Technology
+<ul>
+<li>new Technology</li>
+<li>Learning &amp; Improvements</li>
+</ul></li>
+<li>cost of capacity</li>
+<li>Strategic Uncertainty</li>
+</ul>
+<p><strong>Principle 2:</strong> Always include uncertainty by time bucket</p>
+<ol style="list-style-type: decimal">
+<li>One number forecast: Simple, inexpensive, low-detail</li>
+<li>Multiple scenario forecast: allows for wider range of cases</li>
+<li>Full distribution: complex forecasting, best prediction capability</li>
+</ol>
+<p><strong>Consensus based forecasting</strong> is the idea of asking several specialists for their opinion and let them come up with a number that everyone can agree on. This is dangerous, as it allows for human dynamics to nudge the number to something that does not resemble the actual statistical average of all individual estimates. Hence, it looses detail and information value.</p>
+<h3 id="flexibility-categories">Flexibility Categories</h3>
+<ol style="list-style-type: decimal">
+<li><strong>Mix Flexibility</strong>: Classic example is a 3D Printer. The ability to create several types of products / services with the same invest. Another example in the service environment would be a general consultant. The opposite would be someone highly specialised.</li>
+<li><strong>Volume Flexibility</strong>: Allowing for (low cost) adaptation of the production rate, i.e. a low percentage of fixed costs per unit. A good example are the auto-scalling features of contemporary cloud services.</li>
+<li><strong>New Product Flexibility</strong>: Ability of quickly incorporating new products into the chain and offering them to the market. One such example would be a company that runs a form of incubation lab in the software space. This lab would quickly experiment on possible new products and their viability in the market before incorporating them into the portfolio.</li>
+</ol>
+<h3 id="capacity-strategy-decisions-size-time-and-location">Capacity Strategy decisions: Size, Time and Location</h3>
+<div class="figure">
+<img src="images/pascalwhoop/2.png" />
+
+</div>
+<ul>
+<li>If one produces too much, the produce must be stored</li>
+<li>If one produces too little, the customers must waiting</li>
+<li>If one has capacity but doesn't use it until it is required, the resources must wait</li>
+</ul>
+<p>Scale economies allow for reduced marginal cost with increasing total number of items produced. This may not only be due to the spreading of fixed cost but also from bulk orders leading to material cost reduction, learning processes, efficiency improvements etc.</p>
+<p><strong>Tools of the trade for Risk analysis</strong>: - Scenario analysis: worst, expected, best case 1. Determine Factors 2. Determine Scenarios 3. Assign probabilities 4. Estimate Cash Flow for each 5. Compute expected NPV - Decision Tree &amp; Real Option Analysis: sequential decisions, discrete results - Incorporates <em>decisions</em> in comparison to scenario analysis which expects a certain end result and then weighs the value of each. - Simulation: complex computational models which are part of another lecture</p>
+<h4 id="capacity-time-size-relationship">Capacity Time&lt;-&gt;Size relationship</h4>
+<div class="figure">
+<img src="images/pascalwhoop/3.png" />
+
+</div>
+<p>The question of <em>when</em> one adapts the capacity. This always includes a certain lag for the upgrade process during which demand can fluctuate. The larger the lag the greater the risk.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Advantages of Leading</th>
+<th align="left">Advantages of Lagging</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ensuring every possible sale can be met</td>
+<td align="left">Only answering sure demand, avoiding high fixed costs</td>
+</tr>
+<tr class="even">
+<td align="left">Capacity for adaptive ramp-up in new factories, allows reduction of load on older factories</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p>A hybrid of leading and lagging would achieve a mix of both worlds: One builds up stocks until the demand passes the capacity. Now the stocks get used to satisfy demand. However, a new capacity increase is already in planning and will soon complete, allowing for additional capacity to be added soon.</p>
+<h5 id="capacity-risk-real-options-steps">Capacity Risk: Real Options Steps</h5>
+<p>??? Slide 40 TODO</p>
+<h5 id="location">Location</h5>
+<div class="figure">
+<img src="images/pascalwhoop/5.png" />
+
+</div>
+<ul>
+<li><strong>Source plant</strong>: Produces low cost complex products.</li>
+<li><strong>Lead plant</strong>: Got skills and knowhow, can build complex products</li>
+<li><strong>Contributor plant</strong>: Got access to new markets and can build complex new products</li>
+<li><strong>Offshore plant</strong>: produces specific simple units at low cost</li>
+<li><strong>Outpost plant</strong>: produces simple units but has accumulated complex skills and knowledge which makes it valuable for learning</li>
+<li><strong>Server plant</strong>: produces simple products in foreign market, opening access to region due to avoidance of taxes, tariffs etc</li>
+</ul>
+<h4 id="total-landed-cost-analysis-tlc">Total Landed Cost Analysis (TLC)</h4>
+<div class="figure">
+<img src="images/pascalwhoop/6.png" />
+
+</div>
+<ul>
+<li>Allows decision about location of production</li>
+<li>COGS (Cost of goods sold) + shipping</li>
+<li>doesn't yet help with the decision in/offshoring</li>
+</ul>
+<p>There is a tradeoff point: the higher the service level of a company is set to be, the lower is the cost saving when using offshoring. At some point, it is more logical to use local sources, as shipping and safety stock costs negate all savings of the individual COGS.</p>
 <h2 id="chapter-8">Chapter 8:</h2>
 <h2 id="chapter-9">Chapter 9:</h2>
 <h2 id="chapter-10">Chapter 10:</h2>
