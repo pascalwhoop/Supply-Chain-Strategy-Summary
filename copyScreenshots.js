@@ -3,8 +3,13 @@ exports.__esModule = true;
 var fs = require("fs");
 var watch = require("watch");
 var home = require('os').homedir();
+var username = require('os').hostname();
 var DESKTOP_PATH = home + "/Desktop/";
-var IMAGES_PATH = './images/';
+var IMAGES_PATH = "./images/" + username + "/";
+//making sure the folder exists.
+if (!fs.existsSync(IMAGES_PATH)) {
+    fs.mkdirSync(IMAGES_PATH);
+}
 var lastNumber = calculateLastNumber();
 watch.watchTree(DESKTOP_PATH, {}, function () { return copyScreenShots(); });
 // _____ HELPER FUNCTIONS ______

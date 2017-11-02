@@ -1,8 +1,14 @@
 import  fs = require('fs');
 import watch = require('watch');
 let home = require('os').homedir();
+let username = require('os').hostname();
 const DESKTOP_PATH = `${home}/Desktop/`;
-const IMAGES_PATH = './images/';
+const IMAGES_PATH = `./images/${username}/`;
+
+//making sure the folder exists.
+if(!fs.existsSync(IMAGES_PATH)){
+    fs.mkdirSync(IMAGES_PATH);
+}
 
 
 
