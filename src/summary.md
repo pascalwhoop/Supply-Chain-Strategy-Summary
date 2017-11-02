@@ -28,10 +28,10 @@ $$ f(x) = sin(x) $$
 
 ## Contents
 
-## Chapter 1:
-## Chapter 2:
-## Chapter 3:
-## Chapter 4:
+## Chapter 1: Operations Strategy
+## Chapter 2: Systems Thinking
+## Chapter 3: New Product Development: Planning
+## Chapter 4: New Product Development: Implementation
 ## Chapter 5 & 6: Simulation
 ## Chapter 7: Capacity Strategy
 

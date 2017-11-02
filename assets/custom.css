@@ -32,3 +32,12 @@ td {
   font-weight:300;
   font-size:18px;
 }
+
+@media only print {
+    body{
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+        color: black;
+    }
+}
