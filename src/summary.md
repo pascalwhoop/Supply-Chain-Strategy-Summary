@@ -1,9 +1,12 @@
-# Supply Chain Strategy summary
+# Supply Chain Strategy Summary
 
-> University of Cologne winter semester 2017/18<br/>
-> Pascal Brokmeier & Christian Hovestadt
+University of Cologne winter semester 2017/18
 
-## Information
+Pascal Brokmeier & Christian Hovestadt
+
+<!-- USAGE INFORMATION
+
+ ## Information
 
 To create this summary there are a few helpers to make work easier:
 
@@ -26,10 +29,42 @@ $$ f(x) = sin(x) $$
 
 $$ f(x) = sin(x) $$
 
-## Contents
+-->
 
 ## Chapter 1: Operations Strategy
 ## Chapter 2: Systems Thinking
+
+System thinking is the process of
+
+-   thinking in causal loops
+-   considering the dimension of time in processes
+-   finding leverage points and
+-   using them to improve systems with minimal impact / expense
+
+### Causal loops
+
+Causal loops can either be positively reinforcing or negatively reinforcing. Positive loops lead to an exponential growth unless some other external factor inhibits unlimited growth. Negative loops cause goal seeking behavior where the performances of elements converge towards some system specific equilibrium point.
+![](images/pascalwhoop/9.png)
+
+#### Rules for Causal Loop Diagrams
+
+1. Nouns for elements
+2. Clear "direction of up" for elements
+3. Generally, positive nouns are clearer
+4. Think about side effects. Imporant? Include!
+5. Negative FB loops: Usually goal seeking, best to include an explicit "gap"
+6. Perceived vs. actual state --> often with *delay* to show dynamics
+7. KISS, clearly and intuitive. Explanatory purpose not trying to be mathematically sound
+
+### Behavior Over Time Diagram
+
+![](images/pascalwhooop/10.png)
+
+### Stock and Flow Diagram
+
+Adding stocks to a system diagram allow for memory in the system and therefore different states over time. They also allow for non-constant rates of flow and therefore disequilibrium dynamics (bullwhip effects).
+
+
 ## Chapter 3: New Product Development: Planning
 ## Chapter 4: New Product Development: Implementation
 ## Chapter 5 & 6: Simulation
@@ -51,7 +86,7 @@ The topic of this chapter is the process of deciding the long term requirements 
 -	Customer Stickiness
 -	Competitor Actions
 
-![](images/2.png)
+![](images/pascalwhoop/2.png)
 
 -   **Bottleneck**: slowest process in system
 -   **Throughput**: Number of items that leave system per time University

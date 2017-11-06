@@ -6,36 +6,67 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <link rel="stylesheet" href="assets/foghorn.css"/>
   <link rel="stylesheet" href="assets/custom.css">
 </head>
 <body>
-<h1 id="supply-chain-strategy-summary">Supply Chain Strategy summary</h1>
-<blockquote>
-<p>University of Cologne winter semester 2017/18<br/> Pascal Brokmeier &amp; Christian Hovestadt</p>
-</blockquote>
-<h2 id="information">Information</h2>
-<p>To create this summary there are a few helpers to make work easier:</p>
-<ul>
-<li>running <code>npm install &amp;&amp; npm start</code> will watch the desktop for new <code>.png</code> files and automatically copy them to the images folder.
-<ul>
-<li>new images will be numbered from 1,2,3,4,... all ending with the <code>.png</code> file type</li>
-</ul></li>
-<li>to build a pdf from the markdown one may use <code>npm run build-pdf</code>
-<ul>
-<li>please advise: <code>pandoc</code> as well as <code>latex</code> need to be installed on the system and available in the PATH env variable</li>
-</ul></li>
-<li>to build a html website from the markdown one may use <code>npm build</code></li>
-</ul>
-<p>To install pandoc and latex on Linux one may use: <code>sudo apt install pandoc texlive-latex-base</code> To use math, just use the normal latex notation.</p>
-<p><code>\\( f(x) = 2x \\)</code> for inline \( f(x) = 2x \)</p>
-<p>and for block size math</p>
-<pre><code>$$ f(x) = sin(x) $$</code></pre>
-<p><span class="math display">\[ f(x) = sin(x) \]</span></p>
-<h2 id="contents">Contents</h2>
+<h1 id="supply-chain-strategy-summary">Supply Chain Strategy Summary</h1>
+<p>University of Cologne winter semester 2017/18</p>
+<p>Pascal Brokmeier &amp; Christian Hovestadt</p>
+<!-- USAGE INFORMATION
+
+ ## Information
+
+To create this summary there are a few helpers to make work easier:
+
+- running `npm install && npm start` will watch the desktop for new `.png` files and automatically copy them to the images folder.
+    - new images will be numbered from 1,2,3,4,... all ending with the `.png` file type
+- to build a pdf from the markdown one may use `npm run build-pdf`
+    - please advise: `pandoc` as well as `latex` need to be installed on the system and available in the PATH env variable
+- to build a html website from the markdown one may use `npm build`
+
+To install pandoc and latex on Linux one may use:
+`sudo apt install pandoc texlive-latex-base`
+To use math, just use the normal latex notation.
+
+`\\( f(x) = 2x \\)` for inline \\( f(x) = 2x \\)
+
+and for block size math
+```
+$$ f(x) = sin(x) $$
+```
+
+$$ f(x) = sin(x) $$
+
+-->
 <h2 id="chapter-1-operations-strategy">Chapter 1: Operations Strategy</h2>
 <h2 id="chapter-2-systems-thinking">Chapter 2: Systems Thinking</h2>
+<p>System thinking is the process of</p>
+<ul>
+<li>thinking in causal loops</li>
+<li>considering the dimension of time in processes</li>
+<li>finding leverage points and</li>
+<li>using them to improve systems with minimal impact / expense</li>
+</ul>
+<h3 id="causal-loops">Causal loops</h3>
+<p>Causal loops can either be positively reinforcing or negatively reinforcing. Positive loops lead to an exponential growth unless some other external factor inhibits unlimited growth. Negative loops cause goal seeking behavior where the performances of elements converge towards some system specific equilibrium point. <img src="images/pascalwhoop/9.png" /></p>
+<h4 id="rules-for-causal-loop-diagrams">Rules for Causal Loop Diagrams</h4>
+<ol style="list-style-type: decimal">
+<li>Nouns for elements</li>
+<li>Clear &quot;direction of up&quot; for elements</li>
+<li>Generally, positive nouns are clearer</li>
+<li>Think about side effects. Imporant? Include!</li>
+<li>Negative FB loops: Usually goal seeking, best to include an explicit &quot;gap&quot;</li>
+<li>Perceived vs. actual state --&gt; often with <em>delay</em> to show dynamics</li>
+<li>KISS, clearly and intuitive. Explanatory purpose not trying to be mathematically sound</li>
+</ol>
+<h3 id="behavior-over-time-diagram">Behavior Over Time Diagram</h3>
+<div class="figure">
+<img src="images/pascalwhooop/10.png" />
+
+</div>
+<h3 id="stock-and-flow-diagram">Stock and Flow Diagram</h3>
+<p>Adding stocks to a system diagram allow for memory in the system and therefore different states over time. They also allow for non-constant rates of flow and therefore disequilibrium dynamics (bullwhip effects).</p>
 <h2 id="chapter-3-new-product-development-planning">Chapter 3: New Product Development: Planning</h2>
 <h2 id="chapter-4-new-product-development-implementation">Chapter 4: New Product Development: Implementation</h2>
 <h2 id="chapter-5-6-simulation">Chapter 5 &amp; 6: Simulation</h2>
@@ -56,7 +87,7 @@
 <li>Competitor Actions</li>
 </ul>
 <div class="figure">
-<img src="images/2.png" />
+<img src="images/pascalwhoop/2.png" />
 
 </div>
 <ul>
