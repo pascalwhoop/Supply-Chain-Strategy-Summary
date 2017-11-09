@@ -69,9 +69,66 @@ $$ f(x) = sin(x) $$
 <p>Adding stocks to a system diagram allow for memory in the system and therefore different states over time. They also allow for non-constant rates of flow and therefore disequilibrium dynamics (bullwhip effects).</p>
 <h2 id="chapter-3-new-product-development-planning">Chapter 3: New Product Development: Planning</h2>
 <h2 id="chapter-4-new-product-development-implementation">Chapter 4: New Product Development: Implementation</h2>
+<h3 id="relevance-of-implementation">Relevance of Implementation</h3>
+<p>It is argued based on percent numbers of unsucessful projects overall regarding new products. IT mostly over budget, construction is mostly late, automative seems to be doing alright. Clearly, a strong case of <strong>the planning falacy and sunk cost falacy</strong>.</p>
+<ul>
+<li>Unknown Knowns</li>
+<li>Known Knowns</li>
+<li>Known Unknowns &lt;-- you try to compensate with &quot;buffers&quot;</li>
+<li>Unknown Unknowns &lt;-- these really get you. You don't buffer for those</li>
+</ul>
+<div class="figure">
+<img src="/images/pascalwhoop/13.png" />
+
+</div>
+<h3 id="process-of-new-product-development">Process of New Product Development</h3>
+<p>Idealized process structure visualized by management:</p>
+<div class="figure">
+<img src="images/pascalwhoop/15.png" />
+
+</div>
+<p>Idealized product development process: <em>This is very similar to the waterfall model in SD and will therefore by not included in detail in this summary.</em></p>
+<ol style="list-style-type: decimal">
+<li>Planning</li>
+<li>Concept Development</li>
+<li>System Level Design</li>
+<li>Detail Design</li>
+<li>Testing and Refinement</li>
+<li>Production ramp-up</li>
+</ol>
+<p><strong>Maturity stages of the NPD Process</strong> 1. No process 2. Process defined but not used / known / good / accessible 3. Process used and understood, good for consistent NPD projects 4. Continuous Process Improvement: Everyone is living it</p>
+<h3 id="organizational-implementation">Organizational Implementation</h3>
+<ul>
+<li>Don't put people far away from each other</li>
+<li>have overlap in stages --&gt; communication</li>
+<li>Engineers can work best with 2 projects at the same time (on average)</li>
+<li>Matrix vs Functional organisation and everything in between</li>
+</ul>
+<h3 id="concept-development-the-house-of-quality">Concept Development: The House of Quality</h3>
+<div class="figure">
+<img src="images/pascalwhoop/16.png" />
+
+</div>
+<ol style="list-style-type: decimal">
+<li><strong>What customer wants</strong>: Determined quality attributes desired by market. <em>Also ranked by importance, higher = better</em></li>
+<li><strong>How to serve</strong>: approaches of building it by the company. Not competencies unique to company but solution terms for &quot;wants&quot;</li>
+<li><strong>Relationship Matrix</strong>: Ranking of factors 1, 3, 5 (size of circle)</li>
+<li><strong>Interrelationships</strong>: Relationships between company &quot;hows&quot; (ranking 1, 3, 5)</li>
+<li><strong>Importance Ratings</strong>: Under the Relationship Matrix goes the ratings. Simply sum of factors * customer ranking</li>
+<li><strong>Evaluate competitors</strong> regarding wants. G(ood) / P(oor)</li>
+<li><strong>Metric based evaluation</strong>: Metric for each &quot;how&quot; and multiple &quot;want&quot;, to accurately compare products. Rate both own and competitors</li>
+</ol>
+<div class="figure">
+<img src="images/pascalwhoop/17.png" />
+
+</div>
+<p>This model is especially interesting as it applies the HoQ model to the different stages. Hence for each stage, the wants of the customer are the &quot;hows&quot; of the previous stage: <img src="images/pascalwhoop/18.png" /></p>
+<h3 id="stage-gate-model">Stage Gate Model</h3>
+<p>The Stage Gate model includes the idea of having systematic positions or stages in a process where it is expected of the company to regularly scrap projects that do not manage to pass certain quality or performance criteria. This really is common sense but it is required as humans tend to be biased towards wanting to do too much (project falacy) and feel the need to pull through with rationally failed projects (sunk cost falacy, confirmation bias, ...)</p>
 <h2 id="chapter-5-6-simulation">Chapter 5 &amp; 6: Simulation</h2>
+<p>The simulation was very similar to the second paper of chapter 9, which looks at how to balance near and offshore manufacturing. However, the paper defined correlation between supply and demand. In the simulation, the supply was not fluctuating but fixed and reliable.</p>
 <h2 id="chapter-7-capacity-strategy">Chapter 7: Capacity Strategy</h2>
-<p>The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the scope is &quot;long term&quot;, the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of additional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.</p>
+<p>The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the scope is &quot;long term&quot;, the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of gitadditional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.</p>
 <p><strong>Key determinants of capacity strategy include:</strong></p>
 <ul>
 <li>Demand Growth Curve</li>
