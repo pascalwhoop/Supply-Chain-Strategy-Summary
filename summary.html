@@ -6,6 +6,7 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <link rel="stylesheet" href="assets/foghorn.css"/>
   <link rel="stylesheet" href="assets/custom.css">
 </head>
@@ -245,7 +246,45 @@ $$ f(x) = sin(x) $$
 <li>doesn't yet help with the decision in/offshoring</li>
 </ul>
 <p>There is a tradeoff point: the higher the service level of a company is set to be, the lower is the cost saving when using offshoring. At some point, it is more logical to use local sources, as shipping and safety stock costs negate all savings of the individual COGS.</p>
-<h2 id="chapter-8">Chapter 8:</h2>
+<h2 id="chapter-8-diversification-and-risk-pooling">Chapter 8: Diversification and Risk Pooling</h2>
+<h3 id="risk-pooling-of-demand-uncertainty">Risk Pooling of Demand Uncertainty</h3>
+<p>Sharing the risk by aggregating supply/demand locations and pooling the customer demand. Let's assume:</p>
+<ul>
+<li>1 centralized warehouse supplying iPhones to all of Germany</li>
+<li>100 stores without cooperation, each having to supply their own region</li>
+</ul>
+<p>The differences in demand for separate regions require them to stock much more than they would need if they shared their safety stock pool. However, there are two disadvantages:</p>
+<ul>
+<li>increased response time</li>
+<li>increased shipping costs per unit</li>
+</ul>
+<p>So overall it can be said that in a market where: Individual shipping costs surcharges are low and response time is not elementary, centralized warehouses are rational. This can be seen with car dealers. Yes, they have cars on stock but mainly for demonstration purposes. A Toyota dealer doesn't however store 10 identical models for customers to walk in and buy one.</p>
+<h3 id="correlation-effects-on-risk-pooling">Correlation Effects on Risk Pooling</h3>
+<p>Correlation Coefficients</p>
+<p><span class="math display">\[ p = \frac{\text{covariance}}{\sigma_1\sigma_2} = \frac{E[(D_1-\mu_1)(D_2-\mu_2)]}{\sigma_1\sigma_2} \]</span></p>
+<p>Now this obviously leads to covariance in between locations and, if demand is correlated, this needs to be taken into account. Statistics 101 so to speak.</p>
+<p><span class="math display">\[ \sigma_{pool} = \sqrt{\sigma^2_1 + 2p\sigma_1\sigma_2 + \sigma^2_2} \le \sigma_1 + \sigma_2 \]</span></p>
+<p>How effective is the pool? Well it depends on the correlation factor. if correlation is at -1 then it has the craziest effect as every missed sale is an additional sale somewhere else and the pool buffers this. A +1 correlation leads to no benefit at all.</p>
+<p><span class="math display">\[ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}\]</span></p>
+<div class="figure">
+<img src="images/pascalwhoop/19.png" />
+
+</div>
+<p><em>It is nice to see that all we need to do for this course is understand: Newsvendor model, service level and covariance.</em></p>
+<h3 id="specific-form-of-aggregation">Specific Form of Aggregation:</h3>
+<ul>
+<li>Information centralization</li>
+<li>Specialization</li>
+<li>Product substitution</li>
+<li>Component commonality</li>
+<li>Postponement</li>
+<li>System Design</li>
+</ul>
+<div class="figure">
+<img src="images/pascalwhoop/20.png" />
+
+</div>
+<p>This is of course obvious to a rational person. The question is however, how much does the Flexibility improvements cost the company? A $ 2 Mio. costly ERP system doesn't benefit a shopkeep that owns 4 pasta shops. So the ahead of time investment cost for such a flexibility increasing setup always needs to be weighed against the expected savings.</p>
 <h2 id="chapter-9">Chapter 9:</h2>
 <h2 id="chapter-10">Chapter 10:</h2>
 <h2 id="chapter-11">Chapter 11:</h2>

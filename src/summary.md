@@ -245,7 +245,54 @@ A hybrid of leading and lagging would achieve a mix of both worlds: One builds u
 
 There is a tradeoff point: the higher the service level of a company is set to be, the lower is the cost saving when using offshoring. At some point, it is more logical to use local sources, as shipping and safety stock costs negate all savings of the individual COGS.
 
-## Chapter 8:
+## Chapter 8: Diversification and Risk Pooling
+
+### Risk Pooling of Demand Uncertainty
+
+Sharing the risk by aggregating supply/demand locations and pooling the customer demand. Let's assume:
+
+-   1 centralized warehouse supplying iPhones to all of Germany
+-   100 stores without cooperation, each having to supply their own region
+
+The differences in demand for separate regions require them to stock much more than they would need if they shared their safety stock pool. However, there are two disadvantages:
+
+-   increased response time
+-   increased shipping costs per unit
+
+So overall it can be said that in a market where: Individual shipping costs surcharges are low and response time is not elementary, centralized warehouses are rational. This can be seen with car dealers. Yes, they have cars on stock but mainly for demonstration purposes. A Toyota dealer doesn't however store 10 identical models for customers to walk in and buy one.
+
+### Correlation Effects on Risk Pooling
+
+Correlation Coefficients
+
+$$ p = \frac{\text{covariance}}{\sigma_1\sigma_2} = \frac{E[(D_1-\mu_1)(D_2-\mu_2)]}{\sigma_1\sigma_2} $$
+
+Now this obviously leads to covariance in between locations and, if demand is correlated, this needs to be taken into account. Statistics 101 so to speak.
+
+$$ \sigma_{pool} = \sqrt{\sigma^2_1 + 2p\sigma_1\sigma_2 + \sigma^2_2} \le \sigma_1 + \sigma_2 $$
+
+How effective is the pool? Well it depends on the correlation factor. if correlation is at -1 then it has the craziest effect as every missed sale is an additional sale somewhere else and the pool buffers this. A +1 correlation leads to no benefit at all.
+
+$$ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}$$
+
+![](images/pascalwhoop/19.png)
+
+*It is nice to see that all we need to do for this course is understand: Newsvendor model, service level and covariance.*
+
+### Specific Form of Aggregation:
+
+-   Information centralization
+-   Specialization
+-   Product substitution
+-   Component commonality
+-   Postponement
+-   System Design
+
+![](images/pascalwhoop/20.png)
+
+This is of course obvious to a rational person. The question is however, how much does the Flexibility improvements cost the company? A $ 2 Mio. costly ERP system doesn't benefit a shopkeep that owns 4 pasta shops. So the ahead of time investment cost for such a flexibility increasing setup always needs to be weighed against the expected savings. 
+
+
 ## Chapter 9:
 ## Chapter 10:
 ## Chapter 11:
