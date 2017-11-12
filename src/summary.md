@@ -82,7 +82,7 @@ It is argued based on percent numbers of unsucessful projects overall regarding 
 
 
 ### Process of New Product Development
-
+Find right balance between creative freedom and process discipline
 Idealized process structure visualized by management:
 
 ![](/images/pascalwhoop/15.png)
@@ -119,7 +119,7 @@ Idealized product development process: *This is very similar to the waterfall mo
 1.   **What customer wants**: Determined quality attributes desired by market. *Also ranked by importance, higher = better*
 2.   **How to serve**: approaches of building it by the company. Not competencies unique to company but solution terms for "wants"
 3.   **Relationship Matrix**: Ranking of factors 1, 3, 5 (size of circle)
-4.  **Interrelationships**: Relationships between company "hows" (ranking 1, 3, 5)
+4.  **Interrelationships**: Relationships between company "hows" (just interactions, unspecified if support or conflict)
 5. **Importance Ratings**: Under the Relationship Matrix goes the ratings. Simply sum of factors * customer ranking
 6. **Evaluate competitors** regarding wants. G(ood) / P(oor)
 7. **Metric based evaluation**: Metric for each "how" and multiple "want", to accurately compare products. Rate both own and competitors
@@ -141,6 +141,8 @@ The simulation was very similar to the second paper of chapter 9, which looks at
 
 The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the scope is "long term", the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of gitadditional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.
 
+**Def: Capacity** in the static, physical sense, means the *scale* of an operation
+
 **Key determinants of capacity strategy include:**
 
 -	Demand Growth Curve
@@ -154,6 +156,14 @@ The topic of this chapter is the process of deciding the long term requirements 
 -	Supply Base
 -	Customer Stickiness
 -	Competitor Actions
+
+**Capacity frictions:**
+
+-	Lead times
+-	Lumpiness
+-	Irreversibility
+-	(Demand) Uncertainty
+-	Scale economics
 
 ![](/images/pascalwhoop/2.png)
 
@@ -215,6 +225,7 @@ The question of *when* one adapts the capacity. This always includes a certain l
 
 | Advantages of Leading                     | Advantages of Lagging                     |
 | :---------------------------------------  | :---------------------------------------  |
+| real option: can increase capacity, but no obligation | real option: wait and see |
 | ensuring every possible sale can be met       | Only answering sure demand, avoiding high fixed costs       |
 | Capacity for adaptive ramp-up in new factories, allows reduction of load on older factories | |
 

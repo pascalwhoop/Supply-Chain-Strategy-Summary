@@ -85,7 +85,7 @@ $$ f(x) = sin(x) $$
 </ul>
 <p><img src="/images/pascalwhoop/13.png" /></p>
 <h3 id="process-of-new-product-development">Process of New Product Development</h3>
-<p>Idealized process structure visualized by management:</p>
+<p>Find right balance between creative freedom and process discipline Idealized process structure visualized by management:</p>
 <p><img src="/images/pascalwhoop/15.png" /></p>
 <p>Idealized product development process: <em>This is very similar to the waterfall model in SD and will therefore by not included in detail in this summary.</em></p>
 <ol type="1">
@@ -110,7 +110,7 @@ $$ f(x) = sin(x) $$
 <li><strong>What customer wants</strong>: Determined quality attributes desired by market. <em>Also ranked by importance, higher = better</em></li>
 <li><strong>How to serve</strong>: approaches of building it by the company. Not competencies unique to company but solution terms for “wants”</li>
 <li><strong>Relationship Matrix</strong>: Ranking of factors 1, 3, 5 (size of circle)</li>
-<li><strong>Interrelationships</strong>: Relationships between company “hows” (ranking 1, 3, 5)</li>
+<li><strong>Interrelationships</strong>: Relationships between company “hows” (just interactions, unspecified if support or conflict)</li>
 <li><strong>Importance Ratings</strong>: Under the Relationship Matrix goes the ratings. Simply sum of factors * customer ranking</li>
 <li><strong>Evaluate competitors</strong> regarding wants. G(ood) / P(oor)</li>
 <li><strong>Metric based evaluation</strong>: Metric for each “how” and multiple “want”, to accurately compare products. Rate both own and competitors</li>
@@ -123,6 +123,7 @@ $$ f(x) = sin(x) $$
 <p>The simulation was very similar to the second paper of chapter 9, which looks at how to balance near and offshore manufacturing. However, the paper defined correlation between supply and demand. In the simulation, the supply was not fluctuating but fixed and reliable.</p>
 <h2 id="chapter-7-capacity-strategy">Chapter 7: Capacity Strategy</h2>
 <p>The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the scope is “long term”, the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of gitadditional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.</p>
+<p><strong>Def: Capacity</strong> in the static, physical sense, means the <em>scale</em> of an operation</p>
 <p><strong>Key determinants of capacity strategy include:</strong></p>
 <ul>
 <li>Demand Growth Curve</li>
@@ -136,6 +137,14 @@ $$ f(x) = sin(x) $$
 <li>Supply Base</li>
 <li>Customer Stickiness</li>
 <li>Competitor Actions</li>
+</ul>
+<p><strong>Capacity frictions:</strong></p>
+<ul>
+<li>Lead times</li>
+<li>Lumpiness</li>
+<li>Irreversibility</li>
+<li>(Demand) Uncertainty</li>
+<li>Scale economics</li>
 </ul>
 <p><img src="/images/pascalwhoop/2.png" /></p>
 <ul>
@@ -194,10 +203,14 @@ $$ f(x) = sin(x) $$
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;">real option: can increase capacity, but no obligation</td>
+<td style="text-align: left;">real option: wait and see</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">ensuring every possible sale can be met</td>
 <td style="text-align: left;">Only answering sure demand, avoiding high fixed costs</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Capacity for adaptive ramp-up in new factories, allows reduction of load on older factories</td>
 <td style="text-align: left;"></td>
 </tr>

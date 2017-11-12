@@ -228,6 +228,8 @@ A hybrid of leading and lagging would achieve a mix of both worlds: One builds u
 
 ![](/images/pascalwhoop/5.png)
 
+TODO: Tabelle
+
 -   **Source plant**: Produces low cost complex products.
 -   **Lead plant**: Got skills and knowhow, can build complex products
 -   **Contributor plant**: Got access to new markets and can build complex new products
