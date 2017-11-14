@@ -44,7 +44,7 @@ System thinking is the process of
 ### Causal loops
 
 Causal loops can either be positively reinforcing or negatively reinforcing. Positive loops lead to an exponential growth unless some other external factor inhibits unlimited growth. Negative loops cause goal seeking behavior where the performances of elements converge towards some system specific equilibrium point.
-![](/images/pascalwhoop/9.png)
+![](images/pascalwhoop/9.png)
 
 #### Rules for Causal Loop Diagrams
 
@@ -58,7 +58,7 @@ Causal loops can either be positively reinforcing or negatively reinforcing. Pos
 
 ### Behavior Over Time Diagram
 
-![](/images/pascalwhooop/10.png)
+![](images/pascalwhoop/10.png)
 
 ### Stock and Flow Diagram
 
@@ -77,7 +77,7 @@ It is argued based on percent numbers of unsucessful projects overall regarding 
 -   Known Unknowns <-- you try to compensate with "buffers"
 -   Unknown Unknowns <-- these really get you. You don't buffer for those
 
-![](/images/pascalwhoop/13.png)
+![](images/pascalwhoop/13.png)
 
 
 
@@ -85,7 +85,7 @@ It is argued based on percent numbers of unsucessful projects overall regarding 
 Find right balance between creative freedom and process discipline
 Idealized process structure visualized by management:
 
-![](/images/pascalwhoop/15.png)
+![](images/pascalwhoop/15.png)
 
 Idealized product development process: *This is very similar to the waterfall model in SD and will therefore by not included in detail in this summary.*
 
@@ -113,7 +113,7 @@ Idealized product development process: *This is very similar to the waterfall mo
 
 ### Concept Development: The House of Quality
 
-![](/images/pascalwhoop/16.png)
+![](images/pascalwhoop/16.png)
 
 
 1.   **What customer wants**: Determined quality attributes desired by market. *Also ranked by importance, higher = better*
@@ -124,10 +124,10 @@ Idealized product development process: *This is very similar to the waterfall mo
 6. **Evaluate competitors** regarding wants. G(ood) / P(oor)
 7. **Metric based evaluation**: Metric for each "how" and multiple "want", to accurately compare products. Rate both own and competitors
 
-![](/images/pascalwhoop/17.png)
+![](images/pascalwhoop/17.png)
 
 This model is especially interesting as it applies the HoQ model to the different stages. Hence for each stage, the wants of the customer are the "hows" of the previous stage:
-![](/images/pascalwhoop/18.png)
+![](images/pascalwhoop/18.png)
 
 ### Stage Gate Model
 
@@ -165,7 +165,7 @@ The topic of this chapter is the process of deciding the long term requirements 
 -	(Demand) Uncertainty
 -	Scale economics
 
-![](/images/pascalwhoop/2.png)
+![](images/pascalwhoop/2.png)
 
 -   **Bottleneck**: slowest process in system
 -   **Throughput**: Number of items that leave system per time University
@@ -199,7 +199,7 @@ The topic of this chapter is the process of deciding the long term requirements 
 
 ### Capacity Strategy decisions: Size, Time and Location
 
-![](/images/pascalwhoop/2.png)
+![](images/pascalwhoop/2.png)
 
 -   If one produces too much, the produce must be stored
 -   If one produces too little, the customers must waiting
@@ -219,7 +219,7 @@ Scale economies allow for reduced marginal cost with increasing total number of 
 -   Simulation: complex computational models which are part of another lecture
 
 #### Capacity Time<->Size relationship
-![](/images/pascalwhoop/3.png)
+![](images/pascalwhoop/3.png)
 
 The question of *when* one adapts the capacity. This always includes a certain lag for the upgrade process during which demand can fluctuate. The larger the lag the greater the risk.
 
@@ -237,7 +237,7 @@ A hybrid of leading and lagging would achieve a mix of both worlds: One builds u
 
 ##### Location
 
-![](/images/pascalwhoop/5.png)
+![](images/pascalwhoop/5.png)
 
 -   **Source plant**: Produces low cost complex products.
 -   **Lead plant**: Got skills and knowhow, can build complex products
@@ -248,7 +248,7 @@ A hybrid of leading and lagging would achieve a mix of both worlds: One builds u
 
 #### Total Landed Cost Analysis (TLC)
 
-![](/images/pascalwhoop/6.png)
+![](images/pascalwhoop/6.png)
 
 -   Allows decision about location of production
 -   COGS (Cost of goods sold) + shipping
@@ -286,7 +286,7 @@ How effective is the pool? Well it depends on the correlation factor. if correla
 
 $$ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}$$
 
-![](/images/pascalwhoop/19.png)
+![](images/pascalwhoop/19.png)
 
 *It is nice to see that all we need to do for this course is understand: Newsvendor model, service level and covariance.*
 
@@ -299,9 +299,9 @@ $$ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}$$
 -   Postponement
 -   System Design
 
-![](/images/pascalwhoop/20.png)
+![](images/pascalwhoop/20.png)
 
-This is of course obvious to a rational person. The question is however, how much does the Flexibility improvements cost the company? A $ 2 Mio. costly ERP system doesn't benefit a shopkeep that owns 4 pasta shops. So the ahead of time investment cost for such a flexibility increasing setup always needs to be weighed against the expected savings. 
+This is of course obvious to a rational person. The question is however, how much does the Flexibility improvements cost the company? A $ 2 Mio. costly ERP system doesn't benefit a shopkeep that owns 4 pasta shops. So the ahead of time investment cost for such a flexibility increasing setup always needs to be weighed against the expected savings.
 
 
 ## Chapter 9:
