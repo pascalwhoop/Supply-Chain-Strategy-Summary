@@ -66,22 +66,8 @@ Adding stocks to a system diagram allow for memory in the system and therefore d
 
 
 ## Chapter 3: New Product Development: Planning
-## Chapter 4: New Product Development: Implementation
 
-### Relevance of Implementation
-
-It is argued based on percent numbers of unsucessful projects overall regarding new products. IT mostly over budget, construction is mostly late, automative seems to be doing alright. Clearly, a strong case of **the planning falacy and sunk cost falacy**.
-
--   Unknown Knowns
--   Known Knowns
--   Known Unknowns <-- you try to compensate with "buffers"
--   Unknown Unknowns <-- these really get you. You don't buffer for those
-
-![](images/pascalwhoop/13.png)
-
-
-
-### Process of New Product Development
+### 3.1 Process of New Product Development
 Find right balance between creative freedom and process discipline
 Idealized process structure visualized by management:
 
@@ -102,7 +88,81 @@ Idealized product development process: *This is very similar to the waterfall mo
 3. Process used and understood, good for consistent NPD projects
 4. Continuous Process Improvement: Everyone is living it
 
+### 3.2 Relevance of Planning
+- Objective: Ensure, that the right NPD projects are pursued
+- Decisions:
+  - Which individual NPD projects?
+  - What product mix, platforms and derivatives?
+  - When to execute which NPD project? (sequence and timing)
+  - How to react to risks?
+- Output:
+  - Aggregate product plan
+  - Mission statement for each NPD
+  
+### 3.3 Evaluation and Priorization
+The following 4 components are combined in the aforementioned Aggregate product plan:
 
+- Competitive Strategy
+  - Technology leadership vs. Cost leadership
+  - Innovation vs. Imitation
+  - Sustaining vs. Disruptive
+- Market Segmentation
+- Technological Trajectories
+- Product Platforms
+
+> **Def: Disruption** (Christensen)<br>
+1. New product/service with a different set of performance attributes<br>
+2. Underperforming on attributes of 'old' product that mainstream customers value<br>
+3. High improvement potential
+
+#### Balancing the Portfolio
+![](images/chovestadt/1.png)
+
+### 3.4 Product Architecture
+> **Def: Product Architecture**<br>
+The arrangement of physical elements into chunks which become the building blocks for the product or family of products
+
+#### Modular vs. Integral Architecture
+![](images/chovestadt/2.png)
+
+#### Types of Modularity
+![](images/chovestadt/3.png)
+
+### 3.5 Risk Management
+> **Def: Risk Management** is the art and science of _identifying_ and _responding_ to project risk throughout the life of a project and in the best interests of its objectives.
+
+#### Risk Management Process
+1. Identification
+  - Categorization
+2. Assessment & Priorization
+  - Quantification
+  - Modelling
+  - Reporting
+3. Management (Response Strategy)
+  - System standards (Processes, Responsibilities, ...)
+  - Insurance
+  - Prevention
+  - Mitigation
+  - Contingent planning (Plan B)
+4. Documentation & Learning
+  - For this project
+  - For future projects
+  
+#### Decision-Event-Tree
+A simple tool to assess risks by assining an expected revenue to each possible outcome and probabilities to each event. Decisions are represented as boxes, events as circles.
+
+## Chapter 4: New Product Development: Implementation
+
+### Relevance of Implementation
+
+It is argued based on percent numbers of unsucessful projects overall regarding new products. IT mostly over budget, construction is mostly late, automative seems to be doing alright. Clearly, a strong case of **the planning falacy and sunk cost falacy**.
+
+-   Unknown Knowns
+-   Known Knowns
+-   Known Unknowns <-- you try to compensate with "buffers"
+-   Unknown Unknowns <-- these really get you. You don't buffer for those
+
+![](images/pascalwhoop/13.png)
 
 ### Organizational Implementation
 
@@ -256,7 +316,7 @@ A hybrid of leading and lagging would achieve a mix of both worlds: One builds u
 
 There is a tradeoff point: the higher the service level of a company is set to be, the lower is the cost saving when using offshoring. At some point, it is more logical to use local sources, as shipping and safety stock costs negate all savings of the individual COGS.
 
-## Chapter 8: Diversification and Risk Pooling
+## Chapter 8: Strategic Risk Management: Diversification & Risk Pooling
 
 ### Risk Pooling of Demand Uncertainty
 
@@ -306,7 +366,8 @@ This is of course obvious to a rational person. The question is however, how muc
 TODO: Chaining 
 
 
-## Chapter 9:
-## Chapter 10:
-## Chapter 11:
-## Chapter 12:
+## Chapter 9: Strategic Risk Management: Diversification & Responsive Sourcing
+## Chapter 10: Strategic Sourcing & Supplier Relationships
+## Chapter 11: Lean & Mass Customization Strategies
+## Chapter 12: Operations Strategy: Implementation & Improvement
+## Chapter 13: TBD
