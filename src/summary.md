@@ -32,6 +32,89 @@ $$ f(x) = sin(x) $$
 -->
 
 ## Chapter 1: Operations Strategy
+
+### 1.1 Operations vs. Strategy
+- **Strategy**: Big long-term decisions
+- **Operations**: Short-term decisions
+
+To combine them, analysis has to be performed on supply network, operational and process levels.
+
+### 1.2 Positioning View vs. Resource-based View
+
+#### Positioning View [Porter]
+|               | Lower cost      | Differentiation       |
+| :-----------: | :-------------: | :-------------------: |
+| Broad Target  | Cost Leadership | Differentiation       |
+| Narrow Target | Cost Focus      | Differentiation Focus |
+
+TODO: Table Layout (first column)
+
+Assumes, that operations excellence is not a source of competitive advantage
+
+> Understanding markets --> Strategic operations decisions
+
+#### Resource-based View
+- Competitive advantage derives from (resources and) capabilities, which fulfill the _VRIN-criteria:_
+  - valuable
+  - rare (unique)
+  - inimitable
+  - non-substitutable
+- Capabilities are dynamic and can be...
+  - Process-based
+  - Systems- or coordination-based
+  - Network-based
+  
+> Understanding resources and processes --> Strategic operations decisions
+
+### 1.3 Analyizing a Company's Operations Strategy
+
+#### The Strategic Role of Operations
+![](images/chovestadt/6.png)
+
+#### Decision Areas
+- **Capacity strategy**: How should capacity and facilities in general be configured?
+- **Supply network strategy**: How should operations relate to its supply chain?
+- **Process technology strategy**: Which systems, machines and processes should be chosen?
+- **Development and organization**: How should the operation be run long-term?
+
+#### Performance Objectives
+- Quality: Being _right_
+- Dependability: Being _on time_
+- Speed: Being _fast_
+- Cost: Being _efficient_
+- Flexibility: Being _able to change_
+
+#### Operations Strategy Matrix
+![](images/chovestadt/5.png)
+
+### 1.4 Competitive Priorities and Measures
+- **Quality**
+  - Return rate
+  - Reliability
+- **Dependability and Speed**
+  - Percentage of on-time shipments
+  - Prediction accuracy of delivery dates
+  - Response time to demand changes
+- **Cost**
+  - Unit/Total cost
+  - Life cylce cost
+  - Operating cost
+- **Flexibility**
+  - Product substitutability
+  - Product variants
+  - Response to demand changes
+- **Innovativeness and Features**
+  - Product innovativeness
+  - Time to market
+- **Environmental Performance**
+  - Ease of disassembly and recycling
+  - Resource usage
+
+#### Sand-Cone Model
+![](images/chovestadt/7.png)
+
+--> Cost efficiency relies on other competitive priorities
+
 ## Chapter 2: Systems Thinking
 
 System thinking is the process of
@@ -110,7 +193,7 @@ The following 4 components are combined in the aforementioned Aggregate product 
 - Technological Trajectories
 - Product Platforms
 
-> **Def: Disruption** (Christensen)<br>
+> **Def: Disruption** [Christensen]<br>
 1. New product/service with a different set of performance attributes<br>
 2. Underperforming on attributes of 'old' product that mainstream customers value<br>
 3. High improvement potential
@@ -364,7 +447,6 @@ $$ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}$$
 This is of course obvious to a rational person. The question is however, how much does the Flexibility improvements cost the company? A $ 2 Mio. costly ERP system doesn't benefit a shopkeep that owns 4 pasta shops. So the ahead of time investment cost for such a flexibility increasing setup always needs to be weighed against the expected savings.
 
 TODO: Chaining 
-
 
 ## Chapter 9: Strategic Risk Management: Diversification & Responsive Sourcing
 ## Chapter 10: Strategic Sourcing & Supplier Relationships
