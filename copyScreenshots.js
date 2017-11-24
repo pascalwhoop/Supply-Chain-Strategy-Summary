@@ -3,7 +3,7 @@ exports.__esModule = true;
 var fs = require("fs");
 var watch = require("watch");
 var home = require('os').homedir();
-var username = require('os').hostname();
+var username = require('os').userInfo().username;
 var DESKTOP_PATH = home + "/Desktop/";
 var IMAGES_PATH = "./images/" + username + "/";
 //making sure the folder exists.

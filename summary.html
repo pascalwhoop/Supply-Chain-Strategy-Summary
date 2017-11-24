@@ -7,9 +7,9 @@
   <title>summary</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
-      .smallcaps{font-variant: small-caps;}
-      .line-block{white-space: pre-line;}
-      .column{display: inline-block;}
+      span.smallcaps{font-variant: small-caps;}
+      div.line-block{white-space: pre-line;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
@@ -28,6 +28,7 @@
 
 To create this summary there are a few helpers to make work easier:
 
+- first run `npm install -g typescript live-server` as well as `brew install pandoc` or in case of a linux distro `apt install pandoc` to allow live previewing of the created html
 - running `npm install && npm start` will watch the desktop for new `.png` files and automatically copy them to the images folder.
     - new images will be numbered from 1,2,3,4,... all ending with the `.png` file type
 - to build a pdf from the markdown one may use `npm run build-pdf`
@@ -467,6 +468,44 @@ $$ f(x) = sin(x) $$
 <h2 id="chapter-10-strategic-sourcing-supplier-relationships">Chapter 10: Strategic Sourcing &amp; Supplier Relationships</h2>
 <h2 id="chapter-11-lean-mass-customization-strategies">Chapter 11: Lean &amp; Mass Customization Strategies</h2>
 <h2 id="chapter-12-operations-strategy-implementation-improvement">Chapter 12: Operations Strategy: Implementation &amp; Improvement</h2>
+<h3 id="operations-strategy-implementation">Operations Strategy Implementation</h3>
+<p><em>some fancy process models, triangles, blabla</em></p>
+<h4 id="strategy-cascading">Strategy cascading</h4>
+<p>basically, it’s the modularisation of strategy from abstract to concrete.</p>
+<p><img src="images/pascalwhoop/21.png" /></p>
+<h4 id="balanced-scorecards">Balanced Scorecards</h4>
+<p><strong>4 fields of a balanced strategy</strong></p>
+<p><img src="images/pascalwhoop/22.png" /></p>
+<p>Generally, this chapter is just all about <strong>high level vs. low level</strong> strategy reach, the span between <em>abstract goals</em> and <em>detailed performance measures</em> at the operational level.</p>
+<h3 id="top-down-vs.bottom-up-strategy-formation">Top-Down vs. Bottom-Up Strategy Formation</h3>
+<p>This section is related to a paper by Prof. Sting (yet another one, quiet the printing press this guy). Analysed were a few companies with ˜100 action plans. The following stats will paint the picture</p>
+<p><img src="images/pascalwhoop/23.png" /> <img src="images/pascalwhoop/24.png" /> <img src="images/pascalwhoop/25.png" /></p>
+<ul>
+<li>strategy is influenced on all levels of the hierarchy</li>
+<li>top down is usually externally driven (i.e. market view not capabilities view)</li>
+<li>bottom up taps into specific skills and iterative Improvements</li>
+</ul>
+<h3 id="improvement-strategy">Improvement Strategy</h3>
+<p>How do you get from a current state to an improved state? Overall concepts of learning as a company.</p>
+<ul>
+<li>continuous vs radical Improvements</li>
+<li></li>
+</ul>
+<p><img src="images/pascalwhoop/26.png" /></p>
+<h3 id="learning-curve">Learning Curve</h3>
+<ul>
+<li>basically Moore’s Law (defunked?)</li>
+</ul>
+<p><strong>Learning curve</strong>: <span class="math inline">\(c(x) = c_0 \times x^{-\alpha}\)</span></p>
+<p><strong>Learning rate L:</strong> <span class="math inline">\(L = 2^{-\alpha}\)</span></p>
+<h4 id="how-to-estimate-the-learning-curve-empirically">How to estimate the Learning Curve Empirically</h4>
+<ol type="1">
+<li>Plot on log-log</li>
+<li>Linear regression of points (min squared diff)</li>
+<li><span class="math inline">\(f(x) = \alpha x + b\)</span></li>
+<li>use <span class="math inline">\(\alpha \text{to compute} c_0\)</span></li>
+</ol>
+<p>An interesting fact about learning effects is the ability to extrapolate the global improvements of technologies. While we cannot say <em>how</em> we manage to have 400x faster CPUs in X years, we can say with reasonable certainty, <em>that</em> we will have them.</p>
 <h2 id="chapter-13-tbd">Chapter 13: TBD</h2>
 </body>
 </html>

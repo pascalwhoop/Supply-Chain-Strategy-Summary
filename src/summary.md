@@ -10,6 +10,7 @@ Pascal Brokmeier & Christian Hovestadt
 
 To create this summary there are a few helpers to make work easier:
 
+- first run `npm install -g typescript live-server` as well as `brew install pandoc` or in case of a linux distro `apt install pandoc` to allow live previewing of the created html
 - running `npm install && npm start` will watch the desktop for new `.png` files and automatically copy them to the images folder.
     - new images will be numbered from 1,2,3,4,... all ending with the `.png` file type
 - to build a pdf from the markdown one may use `npm run build-pdf`
@@ -63,7 +64,7 @@ Assumes, that operations excellence is not a source of competitive advantage
   - Process-based
   - Systems- or coordination-based
   - Network-based
-  
+
 > Understanding resources and processes --> Strategic operations decisions
 
 ### 1.3 Analyizing a Company's Operations Strategy
@@ -181,7 +182,7 @@ Idealized product development process: *This is very similar to the waterfall mo
 - Output:
   - Aggregate product plan
   - Mission statement for each NPD
-  
+
 ### 3.3 Evaluation and Priorization
 The following 4 components are combined in the aforementioned Aggregate product plan:
 
@@ -230,7 +231,7 @@ The arrangement of physical elements into chunks which become the building block
 4. Documentation & Learning
   - For this project
   - For future projects
-  
+
 #### Decision-Event-Tree
 A simple tool to assess risks by assining an expected revenue to each possible outcome and probabilities to each event. Decisions are represented as boxes, events as circles.
 
@@ -446,10 +447,69 @@ $$ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}$$
 
 This is of course obvious to a rational person. The question is however, how much does the Flexibility improvements cost the company? A $ 2 Mio. costly ERP system doesn't benefit a shopkeep that owns 4 pasta shops. So the ahead of time investment cost for such a flexibility increasing setup always needs to be weighed against the expected savings.
 
-TODO: Chaining 
+TODO: Chaining
 
 ## Chapter 9: Strategic Risk Management: Diversification & Responsive Sourcing
 ## Chapter 10: Strategic Sourcing & Supplier Relationships
 ## Chapter 11: Lean & Mass Customization Strategies
 ## Chapter 12: Operations Strategy: Implementation & Improvement
+
+### Operations Strategy Implementation
+
+*some fancy process models, triangles, blabla*
+
+#### Strategy cascading
+
+basically, it's the modularisation of strategy from abstract to concrete.
+
+![](images/pascalwhoop/21.png)
+
+#### Balanced Scorecards
+
+**4 fields of a balanced strategy**
+
+![](images/pascalwhoop/22.png)
+
+Generally, this chapter is just all about **high level vs. low level** strategy reach, the span between *abstract goals* and *detailed performance measures* at the operational level.
+
+### Top-Down vs. Bottom-Up Strategy Formation
+
+This section is related to a paper by Prof. Sting (yet another one, quiet the printing press this guy). Analysed were a few companies with ˜100 action plans. The following stats will paint the picture
+
+![](images/pascalwhoop/23.png)
+![](images/pascalwhoop/24.png)
+![](images/pascalwhoop/25.png)
+
+- strategy is influenced on all levels of the hierarchy
+- top down is usually externally driven (i.e. market view not capabilities view)
+- bottom up taps into specific skills and iterative Improvements
+
+
+### Improvement Strategy
+
+How do you get from a current state to an improved state? Overall concepts of learning as a company.
+
+- continuous vs radical Improvements
+-
+
+![](images/pascalwhoop/26.png)
+
+
+### Learning Curve
+
+- basically Moore's Law (defunked?)
+
+**Learning curve**: $c(x) = c_0 \times x^{-\alpha}$
+
+**Learning rate L:** $L = 2^{-\alpha}$
+
+#### How to estimate the Learning Curve Empirically
+
+1. Plot on log-log
+2. Linear regression of points (min squared diff)
+3. $f(x) = \alpha x + b$
+4. use $\alpha \text{to compute} c_0$
+
+An interesting fact about learning effects is the ability to extrapolate the global improvements of technologies. While we cannot say *how* we manage to have 400x faster CPUs in X years, we can say with reasonable certainty, *that* we will have them.
+
 ## Chapter 13: TBD

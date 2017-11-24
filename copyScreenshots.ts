@@ -1,7 +1,7 @@
 import  fs = require('fs');
 import watch = require('watch');
 let home = require('os').homedir();
-let username = require('os').hostname();
+let username = require('os').userInfo().username;
 const DESKTOP_PATH = `${home}/Desktop/`;
 const IMAGES_PATH = `./images/${username}/`;
 
