@@ -451,6 +451,54 @@ TODO: Chaining
 
 ## Chapter 9: Strategic Risk Management: Diversification & Responsive Sourcing
 ## Chapter 10: Strategic Sourcing & Supplier Relationships
+
+-   a small amount of savings in procurement may lead to a fairly large profit increase
+-   complexity through too much outsourcing vs. in-house complexity
+
+### Make-or-buy decisions
+
+![](images/pascalwhoop/27.png)
+
+**Total cost of ownership (TCO)**
+
+-   TCO captures the entire lifetime of a product, not just aquisition (compare TLC)
+-   can be used to compare different suppliers with a holistic evaluation of their offers
+-   is made up of
+    -   purchase price
+    -   internal costs
+    -   joint costs
+
+### Supplier-Relationships
+
+![](images/pascalwhoop/28.png)
+
+#### The Nissan Case – Research Discussion
+#### Responsive Sourcing – Research Discussion
+
+## Chapter 11:
+
+### Paper about Additive Manufacturing
+
+The paper discusses the chances and challenges of additive manufacturing for the global markets as well as for the economy of the US as a nation. It's a predictive article, meaning it's based on hypothesis and theories without proof but on educated guesses.
+
+One major assumption the author makes and bases his arguments on is the assumption that AM is not suffering from scale economies or rather the lack of them due to low numbers of production. He argues that this leads to massive changes in the supply chains of most products and will affect everyone quiet strongly.
+
+*I argue that he does not once reason why the AM will not suffer from economies of scale. Some reasons why it should also suffer from EOS:*
+
+-   fixed costs such as rent, insurance, machines (3D printers), staff will still exist
+-   base materials for products will still have to be purchased --> large shippments are still cheaper
+-   large companies still have learning and, bargaining power and capacity utilization as an advantage
+
+The author partially argues against these points in later paragraphs. The arguments are partially valid but without any funding proof. The first point he also notes, the second one he argues is less relevant, as AM firms can buy base materials for all sorts of products instead of having to buy individual distinct items. Hence, they have EOS by being able to purchase in bulk for several different products. This however assumes other firms cannot buy at one supplier and get discounts even though they order "10% of everything". It also assumes that competitors do not also produce from raw materials. If we were to talk e.g. about different bolts, screws and hinges, the TM manufacturers also produce these from raw materials and hence also purchase just one material in bulk.
+
+The author also argues that learning and experience is less relevant for AM firms. I disagree, as the technology certainly hasn't become simpler and hence, a highly skill workforce is still required. Also, AM firms don't really compete with classic, mainly human based manufacturing but with highly automated processing plants. Hence, they compete with robotic assembly lines.
+
+A tradeoff curve would be required for all these to see the *actual* differences in EOS. This probably requires repeated empiricical data.
+
+Assuming small firms *can* adequately compete with large firms through the deployment of AM, the author makes an interesting point. He introduces a **tradeoff between organzational costs and economies of scale.**
+
+While the author introduces the idea of large firms adopting AM and then moving towards many small franchised firms close to the customer, the inherent conclusion still is that there needs to be a global network of raw material deliveries. The concept of the "platform economy" therefore goes hand in hand with the idea of many small companies as some platform is required to integrate their economic interactions.
+
 ## Chapter 11: Lean & Mass Customization Strategies
 ## Chapter 12: Operations Strategy: Implementation & Improvement
 
@@ -511,5 +559,3 @@ How do you get from a current state to an improved state? Overall concepts of le
 4. use $\alpha \text{to compute} c_0$
 
 An interesting fact about learning effects is the ability to extrapolate the global improvements of technologies. While we cannot say *how* we manage to have 400x faster CPUs in X years, we can say with reasonable certainty, *that* we will have them.
-
-## Chapter 13: TBD
