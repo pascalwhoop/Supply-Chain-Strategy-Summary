@@ -506,11 +506,14 @@ While the author introduces the idea of large firms adopting AM and then moving 
 
 *some fancy process models, triangles, blabla*
 
+#### Industry Excellence Framework
+![](images/chovestadt/9.png)
+
 #### Strategy cascading
 
-basically, it's the modularisation of strategy from abstract to concrete.
+basically, it's the modularisation of strategy from abstract to concrete: Translate targets into actions which become targets on lower levels again
 
-![](images/pascalwhoop/21.png)
+![](images/chovestadt/10.png)
 
 #### Balanced Scorecards
 
@@ -556,6 +559,6 @@ How do you get from a current state to an improved state? Overall concepts of le
 1. Plot on log-log
 2. Linear regression of points (min squared diff)
 3. $f(x) = \alpha x + b$
-4. use $\alpha \text{to compute} c_0$
+4. use $\alpha$ to compute $c_0$
 
 An interesting fact about learning effects is the ability to extrapolate the global improvements of technologies. While we cannot say *how* we manage to have 400x faster CPUs in X years, we can say with reasonable certainty, *that* we will have them.
