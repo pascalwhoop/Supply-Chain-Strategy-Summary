@@ -43,10 +43,10 @@ To combine them, analysis has to be performed on supply network, operational and
 ### 1.2 Positioning View vs. Resource-based View
 
 #### Positioning View [Porter]
-|               | Lower cost      | Differentiation       |
-| :-----------: | :-------------: | :-------------------: |
-| Broad Target  | Cost Leadership | Differentiation       |
-| Narrow Target | Cost Focus      | Differentiation Focus |
+|                   | Lower cost      | Differentiation       |
+| :---------------: | :-------------: | :-------------------: |
+| **Broad Target**  | Cost Leadership | Differentiation       |
+| **Narrow Target** | Cost Focus      | Differentiation Focus |
 
 Assumes, that operations excellence is not a source of competitive advantage
 
@@ -64,6 +64,9 @@ Assumes, that operations excellence is not a source of competitive advantage
   - Network-based
 
 > Understanding resources and processes --> Strategic operations decisions
+
+#### Strategic reconciliation of market requirements with capabilities
+![](images/chovestadt/16.png)
 
 ### 1.3 Analyizing a Company's Operations Strategy
 
@@ -116,17 +119,22 @@ Assumes, that operations excellence is not a source of competitive advantage
 
 ## Chapter 2: Systems Thinking
 
-System thinking is the process of
+**System thinking** is the process of...
 
 -   thinking in causal loops
 -   considering the dimension of time in processes
 -   finding leverage points and
 -   using them to improve systems with minimal impact / expense
 
-### Causal loops
+**System dynamics** (developed in the 1950s at MIT) aims to to understand...
+
+- Complex causal relationships over time
+- Death Spirals and virtuous circles
+- Business irony (e.g. fixes that backfire, things get worse before they get better, tipping points)
+
+### 2.1 Causal Loop Diagram
 
 Causal loops can either be positively reinforcing or negatively reinforcing. Positive loops lead to an exponential growth unless some other external factor inhibits unlimited growth. Negative loops cause goal seeking behavior where the performances of elements converge towards some system specific equilibrium point.
-![](images/pascalwhoop/9.png)
 
 #### Rules for Causal Loop Diagrams
 
@@ -138,14 +146,15 @@ Causal loops can either be positively reinforcing or negatively reinforcing. Pos
 6. Perceived vs. actual state --> often with *delay* to show dynamics
 7. KISS, clearly and intuitive. Explanatory purpose not trying to be mathematically sound
 
-### Behavior Over Time Diagram
+### 2.2 Behavior Over Time Diagram
 
+![](images/pascalwhoop/9.png)
 ![](images/pascalwhoop/10.png)
 
-### Stock and Flow Diagram
+### 2.3 Stock and Flow Diagram
 
 Adding stocks to a system diagram allow for memory in the system and therefore different states over time. They also allow for non-constant rates of flow and therefore disequilibrium dynamics (bullwhip effects).
-
+![](images/chovestadt/17.png)
 
 ## Chapter 3: New Product Development: Planning
 
@@ -165,6 +174,7 @@ Idealized product development process: *This is very similar to the waterfall mo
 6. Production ramp-up
 
 **Maturity stages of the NPD Process**
+
 1. No process
 2. Process defined but not used / known / good / accessible
 3. Process used and understood, good for consistent NPD projects
@@ -235,7 +245,7 @@ A simple tool to assess risks by assining an expected revenue to each possible o
 
 ## Chapter 4: New Product Development: Implementation
 
-### Relevance of Implementation
+### 4.1 Relevance of Implementation
 
 It is argued based on percent numbers of unsucessful projects overall regarding new products. IT mostly over budget, construction is mostly late, automative seems to be doing alright. Clearly, a strong case of **the planning falacy and sunk cost falacy**.
 
@@ -244,24 +254,25 @@ It is argued based on percent numbers of unsucessful projects overall regarding 
 -   Known Unknowns <-- you try to compensate with "buffers"
 -   Unknown Unknowns <-- these really get you. You don't buffer for those
 
+#### Financial Impact of Time to Market
+
 ![](images/pascalwhoop/13.png)
 
-### Organizational Implementation
+### 4.2 Organizational Implementation
 
 -   Don't put people far away from each other
 -   have overlap in stages --> communication
 -   Engineers can work best with 2 projects at the same time (on average)
 -   Matrix vs Functional organisation and everything in between
 
-### Concept Development: The House of Quality
+### 4.3 Concept Development: The House of Quality
 
 ![](images/pascalwhoop/16.png)
 
-
-1.   **What customer wants**: Determined quality attributes desired by market. *Also ranked by importance, higher = better*
-2.   **How to serve**: approaches of building it by the company. Not competencies unique to company but solution terms for "wants"
-3.   **Relationship Matrix**: Ranking of factors 1, 3, 5 (size of circle)
-4.  **Interrelationships**: Relationships between company "hows" (just interactions, unspecified if support or conflict)
+1. **What customer wants**: Determined quality attributes desired by market. *Also ranked by importance, higher = better*
+2. **How to serve**: approaches of building it by the company. Not competencies unique to company but solution terms for "wants"
+3. **Relationship Matrix**: Ranking of factors 1, 3, 5 (size of circle)
+4. **Interrelationships**: Relationships between company "hows" (just interactions, unspecified if support or conflict)
 5. **Importance Ratings**: Under the Relationship Matrix goes the ratings. Simply sum of factors * customer ranking
 6. **Evaluate competitors** regarding wants. G(ood) / P(oor)
 7. **Metric based evaluation**: Metric for each "how" and multiple "want", to accurately compare products. Rate both own and competitors
@@ -271,11 +282,11 @@ It is argued based on percent numbers of unsucessful projects overall regarding 
 This model is especially interesting as it applies the HoQ model to the different stages. Hence for each stage, the wants of the customer are the "hows" of the previous stage:
 ![](images/pascalwhoop/18.png)
 
-### Stage Gate Model
+### 4.4 Stage Gate Model [Cooper]
 
-The Stage Gate model includes the idea of having systematic positions or stages in a process where it is expected of the company to regularly scrap projects that do not manage to pass certain quality or performance criteria. This really is common sense but it is required as humans tend to be biased towards wanting to do too much (project falacy) and feel the need to pull through with rationally failed projects (sunk cost falacy, confirmation bias, ...)
+The Stage Gate model includes the idea of having systematic positions or stages in a process where it is expected of to regularly scrap projects that do not manage to pass certain quality or performance criteria (Go/Kill decisions). The decisions are made by a team of *gatekeepers* from management, who are resource owners, but are not as involved as the project managers. This really is common sense but it is required as humans tend to be biased towards wanting to do too much (project falacy) and feel the need to pull through with rationally failed projects (sunk cost falacy, confirmation bias, ...)
 
-## Chapter 5 & 6: Simulation
+## Chapters 5 & 6: Simulation
 
 The simulation was very similar to the second paper of chapter 9, which looks at how to balance near and offshore manufacturing. However, the paper defined correlation between supply and demand. In the simulation, the supply was not fluctuating but fixed and reliable.
 
@@ -633,3 +644,32 @@ How do you get from a current state to an improved state? Overall concepts of le
 4. use $\alpha$ to compute $c_0$
 
 An interesting fact about learning effects is the ability to extrapolate the global improvements of technologies. While we cannot say *how* we manage to have 400x faster CPUs in X years, we can say with reasonable certainty, *that* we will have them.
+
+## Chapter 13: Group Presentations
+There was no regular lecture in session 13, as the group assignments have been presented.
+
+## Chapter 14: Benchmarking
+> **Def:** A **benchmark** is an organization, process or product that is exemplary.
+
+> **Def: Benchmarking** is the process that enables companies to define gaps in their performance and practices.
+
+#### Types of Benchmarking
+
+- Functional/Process benchmarking
+- Financial benchmarking
+- Product benchmarking
+- Internal vs. external benchmarking
+- Competitive vs. non-competitive benchmarking
+
+#### Benchmarking Process (The Xerox Principle)
+1. What to benchmark?
+2. What to measure?
+3. Who to benchmark?
+4. Data collection
+5. Data analysis & Gap identification
+6. Goal setting & Action plan development
+7. Process monitoring
+
+<br>
+<br>
+The End :)
