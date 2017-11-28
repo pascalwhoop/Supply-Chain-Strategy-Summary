@@ -48,8 +48,6 @@ To combine them, analysis has to be performed on supply network, operational and
 | Broad Target  | Cost Leadership | Differentiation       |
 | Narrow Target | Cost Focus      | Differentiation Focus |
 
-TODO: Table Layout (first column)
-
 Assumes, that operations excellence is not a source of competitive advantage
 
 > Understanding markets --> Strategic operations decisions
@@ -475,9 +473,78 @@ TODO: Chaining
 #### The Nissan Case – Research Discussion
 #### Responsive Sourcing – Research Discussion
 
-## Chapter 11:
+## Chapter 11: Lean & Mass Customization Strategies
+### 11.1 Lean Management
+#### Traditional vs. lean flow
+![](images/chovestadt/11.png)
 
-### Paper about Additive Manufacturing
+--> Reduce inventory not only to cut cost, but also to reveal the operation's problems
+
+#### Elements of Lean
+- Customer-based demand triggers
+- Synchronized flow
+- Continous improvement
+- Waste elimination
+
+#### Goals
+Produce the required items, at the required time, in the required quantity
+- Zero defects
+- Zero inventories
+- Zero set-up time
+- Zero lead time
+- Zero parts Handling
+- Zero breakdown
+- Batch size of one
+
+#### Lean Strategy
+- Capacity Strategy:
+	- Sacrifice high utilization for fast and dependable throughput
+- Supply Network:
+	- Supplier development to ensure quality and delivery conformance
+	- Integrated supply network coordination to ensure synchronous flow
+	- Work on functional barriers
+- Process Technology:
+	- Flexible technology for small batch sizes
+	- Reliability
+	- Reduction of process variability
+- Development & Organization:
+	- Continuous improvement through waste elimination
+	- Smooth synchronized flow exposes waste
+	- People motivation & involvement through reduced buffering
+	
+#### Key Tools for Implementing a Lean Strategy
+- *Kanban:* Scheduling is started from the finished product/customer
+- *Two Bin System:* The waiter fills one glass while you drink the other one
+- *Poka-Yoke:* Simple, inexpensive, failsafe devices or systems which prevent mistakes from being made or from becoming defects
+- *Single Minute Exchange of Dies (SMED):* Setup time reduction by converting internal setup (which can only be performed when the process is stopped) to external setup (which can be performed in advanced), streamlining them and performing them in parallel (e.g. F1 pit stop)
+ 
+### 11.2 Mass Customization
+> **Def: Mass Customization**<br>
+The customization of products or services for a mass market of customers, with near mass production efficiency through flexible and responsive pull-processes
+
+#### Why Customization?
+- Higher transparency of choice for customer
+- Shorter product life cycles
+- Products and services are more configurable
+- Advances in manufacturing techonolgy and order-taking interfaces
+- Higher coverage of customer needs
+- Build to order --> Lower inventories
+- Charge a premium
+
+#### Customer Order Decoupling Point (CODP)
+The point at which the push-processes are decoupled from the pull-processes
+- Before CODP: Production based on estimated demand
+- After CODP: Production based on customer demand
+
+![](images/chovestadt/12.png)
+
+#### Paradox of Choice
+Studies indicate more customization options are not always better since customers may be overwhelmed by the choice
+
+#### Approaches to Mass Customization
+![](images/chovestadt/13.png)
+
+### 11.3 Paper about Additive Manufacturing
 
 The paper discusses the chances and challenges of additive manufacturing for the global markets as well as for the economy of the US as a nation. It's a predictive article, meaning it's based on hypothesis and theories without proof but on educated guesses.
 
@@ -499,12 +566,9 @@ Assuming small firms *can* adequately compete with large firms through the deplo
 
 While the author introduces the idea of large firms adopting AM and then moving towards many small franchised firms close to the customer, the inherent conclusion still is that there needs to be a global network of raw material deliveries. The concept of the "platform economy" therefore goes hand in hand with the idea of many small companies as some platform is required to integrate their economic interactions.
 
-## Chapter 11: Lean & Mass Customization Strategies
 ## Chapter 12: Operations Strategy: Implementation & Improvement
 
-### Operations Strategy Implementation
-
-*some fancy process models, triangles, blabla*
+### 12.1 Operations Strategy Implementation
 
 #### Industry Excellence Framework
 ![](images/chovestadt/9.png)
@@ -515,40 +579,47 @@ basically, it's the modularisation of strategy from abstract to concrete: Transl
 
 ![](images/chovestadt/10.png)
 
-#### Balanced Scorecards
-
-**4 fields of a balanced strategy**
+#### Balanced Scorecards: 4 fields of a balanced strategy
 
 ![](images/pascalwhoop/22.png)
 
+#### Performance Targets & Levels of Aggregation
+![](images/chovestadt/14.png)
+
 Generally, this chapter is just all about **high level vs. low level** strategy reach, the span between *abstract goals* and *detailed performance measures* at the operational level.
 
-### Top-Down vs. Bottom-Up Strategy Formation
+### Top-Down vs. Bottom-Up Strategy
 
 This section is related to a paper by Prof. Sting (yet another one, quiet the printing press this guy). Analysed were a few companies with ˜100 action plans. The following stats will paint the picture
 
 ![](images/pascalwhoop/23.png)
 ![](images/pascalwhoop/24.png)
+
+#### Integrated Process of Operations Strategy with Bottom-Up Strategy
 ![](images/pascalwhoop/25.png)
 
 - strategy is influenced on all levels of the hierarchy
-- top down is usually externally driven (i.e. market view not capabilities view)
-- bottom up taps into specific skills and iterative Improvements
+- top-down is usually externally driven (i.e. market view not capabilities view) and is effective for direction/control
+- bottom-up taps into specific skills and iterative Improvements
 
 
-### Improvement Strategy
+### 12.3 Improvement Strategy
 
 How do you get from a current state to an improved state? Overall concepts of learning as a company.
 
-- continuous vs radical Improvements
--
+- *Continuous Improvement Processes:* Reduce unit cost
+- *Radical Improvement Processes:* Reduce unit cost & increase non-cost competency
 
+#### Improvement as Feedback Loop
+![](images/chovestadt/15.png)
+
+#### Learning Models: Conceptual vs. Operational
 ![](images/pascalwhoop/26.png)
 
-
-### Learning Curve
-
+### 12.4 Learning Curve
 - basically Moore's Law (defunked?)
+- represents "learning by doing"
+- "Each doubling of cumulative volume implies cost reduces at rate $L$"
 
 **Learning curve**: $c(x) = c_0 \times x^{-\alpha}$
 
