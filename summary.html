@@ -329,9 +329,12 @@ $$ f(x) = sin(x) $$
 <h2 id="chapters-5-6-simulation">Chapters 5 &amp; 6: Simulation</h2>
 <p>The simulation was very similar to the second paper of chapter 9, which looks at how to balance near and offshore manufacturing. However, the paper defined correlation between supply and demand. In the simulation, the supply was not fluctuating but fixed and reliable.</p>
 <h2 id="chapter-7-capacity-strategy">Chapter 7: Capacity Strategy</h2>
-<p>The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the scope is “long term”, the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of gitadditional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.</p>
+<p>The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the focus is “long term” (1-5+ years), the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of gitadditional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.</p>
+<h3 id="capacity-bottlenecks">7.1 Capacity &amp; Bottlenecks</h3>
+<blockquote>
 <p><strong>Def: Capacity</strong> in the static, physical sense, means the <em>scale</em> of an operation</p>
-<p><strong>Key determinants of capacity strategy include:</strong></p>
+</blockquote>
+<h4 id="key-determinants-of-capacity-strategy-include">Key determinants of capacity strategy include:</h4>
 <ul>
 <li>Demand Growth Curve</li>
 <li>Demand Growth Curve</li>
@@ -345,7 +348,7 @@ $$ f(x) = sin(x) $$
 <li>Customer Stickiness</li>
 <li>Competitor Actions</li>
 </ul>
-<p><strong>Capacity frictions:</strong></p>
+<h4 id="capacity-frictions">Capacity frictions:</h4>
 <ul>
 <li>Lead times</li>
 <li>Lumpiness</li>
@@ -353,14 +356,15 @@ $$ f(x) = sin(x) $$
 <li>(Demand) Uncertainty</li>
 <li>Scale economics</li>
 </ul>
-<p><img src="images/pascalwhoop/2.png" /></p>
+<p><img src="images/pascalwhoop/1.png" /></p>
+<h4 id="performance-indicators">Performance Indicators</h4>
 <ul>
 <li><strong>Bottleneck</strong>: slowest process in system</li>
 <li><strong>Throughput</strong>: Number of items that leave system per time University</li>
 <li><strong>Capacity</strong>: max throughput of system</li>
 </ul>
-<h3 id="forecasts">Forecasts</h3>
-<p><strong>Principle 1:</strong> Always include in forecast derivation process</p>
+<h3 id="forecasting">7.2 Forecasting</h3>
+<p><strong>Principle 1:</strong> Always include all predictions on the evolution of all factors:</p>
 <ul>
 <li>Demand</li>
 <li>Supply</li>
@@ -378,23 +382,35 @@ $$ f(x) = sin(x) $$
 <li>Multiple scenario forecast: allows for wider range of cases</li>
 <li>Full distribution: complex forecasting, best prediction capability</li>
 </ol>
-<p><strong>Consensus based forecasting</strong> is the idea of asking several specialists for their opinion and let them come up with a number that everyone can agree on. This is dangerous, as it allows for human dynamics to nudge the number to something that does not resemble the actual statistical average of all individual estimates. Hence, it looses detail and information value.</p>
-<h3 id="flexibility-categories">Flexibility Categories</h3>
+<h4 id="consensus-forecasting">Consensus forecasting</h4>
+<p>The idea of asking several specialists for their opinion and let them come up with a number that everyone can agree on. This is dangerous, as it allows for human dynamics to nudge the number to something that does not resemble the actual statistical average of all individual estimates. Hence, it looses detail and information value.</p>
+<h3 id="flexibility">7.3 Flexibility</h3>
 <ol type="1">
 <li><strong>Mix Flexibility</strong>: Classic example is a 3D Printer. The ability to create several types of products / services with the same invest. Another example in the service environment would be a general consultant. The opposite would be someone highly specialised.</li>
 <li><strong>Volume Flexibility</strong>: Allowing for (low cost) adaptation of the production rate, i.e. a low percentage of fixed costs per unit. A good example are the auto-scalling features of contemporary cloud services.</li>
 <li><strong>New Product Flexibility</strong>: Ability of quickly incorporating new products into the chain and offering them to the market. One such example would be a company that runs a form of incubation lab in the software space. This lab would quickly experiment on possible new products and their viability in the market before incorporating them into the portfolio.</li>
 </ol>
-<h3 id="capacity-strategy-decisions-size-time-and-location">Capacity Strategy decisions: Size, Time and Location</h3>
+<h3 id="capacity-strategy-decisions-size-time-and-location">7.4 Capacity Strategy Decisions: Size, Time and Location</h3>
+<h4 id="key-trade-off-of-capacity-sizing">Key Trade-off of Capacity Sizing</h4>
 <p><img src="images/pascalwhoop/2.png" /></p>
-<ul>
-<li>If one produces too much, the produce must be stored</li>
-<li>If one produces too little, the customers must waiting</li>
-<li>If one has capacity but doesn’t use it until it is required, the resources must wait</li>
-</ul>
 <p>Scale economies allow for reduced marginal cost with increasing total number of items produced. This may not only be due to the spreading of fixed cost but also from bulk orders leading to material cost reduction, learning processes, efficiency improvements etc.</p>
-<p><strong>Tools of the trade for Risk analysis</strong>: - Scenario analysis: worst, expected, best case 1. Determine Factors 2. Determine Scenarios 3. Assign probabilities 4. Estimate Cash Flow for each 5. Compute expected NPV - Decision Tree &amp; Real Option Analysis: sequential decisions, discrete results - Incorporates <em>decisions</em> in comparison to scenario analysis which expects a certain end result and then weighs the value of each. - Simulation: complex computational models which are part of another lecture</p>
-<h4 id="capacity-time-size-relationship">Capacity Time&lt;-&gt;Size relationship</h4>
+<h4 id="tools-of-the-trade-for-risk-analysis">Tools of the trade for Risk analysis:</h4>
+<ul>
+<li>Scenario analysis: worst, expected, best case
+<ol type="1">
+<li>Determine Factors</li>
+<li>Determine Scenarios</li>
+<li>Assign probabilities</li>
+<li>Estimate Cash Flow for each</li>
+<li>Compute expected NPV</li>
+</ol></li>
+<li>Decision Tree &amp; Real Option Analysis: sequential decisions, discrete results
+<ul>
+<li>Incorporates <em>decisions</em> in comparison to scenario analysis which expects a certain end result and then weighs the value of each.</li>
+</ul></li>
+<li>Simulation: complex computational models which are part of another lecture</li>
+</ul>
+<h4 id="capacity-time-size-relationship">Capacity Time &lt;–&gt; Size relationship</h4>
 <p><img src="images/pascalwhoop/3.png" /></p>
 <p>The question of <em>when</em> one adapts the capacity. This always includes a certain lag for the upgrade process during which demand can fluctuate. The larger the lag the greater the risk.</p>
 <table>
@@ -425,7 +441,20 @@ $$ f(x) = sin(x) $$
 </table>
 <p>A hybrid of leading and lagging would achieve a mix of both worlds: One builds up stocks until the demand passes the capacity. Now the stocks get used to satisfy demand. However, a new capacity increase is already in planning and will soon complete, allowing for additional capacity to be added soon.</p>
 <h5 id="capacity-risk-real-options-steps">Capacity Risk: Real Options Steps</h5>
-<p>??? Slide 40 TODO</p>
+<ol type="1">
+<li>Draw decision tree
+<ul>
+<li>Identify decisions (real options, squares)</li>
+<li>Identify uncertainties (circles)</li>
+<li>Identify sequence</li>
+</ul></li>
+<li>Quantify
+<ul>
+<li>Identify probabilities</li>
+<li>Identify outcome values</li>
+</ul></li>
+<li>Work backwards</li>
+</ol>
 <h5 id="location">Location</h5>
 <p><img src="images/pascalwhoop/5.png" /></p>
 <ul>
@@ -445,7 +474,7 @@ $$ f(x) = sin(x) $$
 </ul>
 <p>There is a tradeoff point: the higher the service level of a company is set to be, the lower is the cost saving when using offshoring. At some point, it is more logical to use local sources, as shipping and safety stock costs negate all savings of the individual COGS.</p>
 <h2 id="chapter-8-strategic-risk-management-diversification-risk-pooling">Chapter 8: Strategic Risk Management: Diversification &amp; Risk Pooling</h2>
-<h3 id="risk-pooling-of-demand-uncertainty">Risk Pooling of Demand Uncertainty</h3>
+<h3 id="risk-pooling-of-demand-uncertainty">8.1 Risk Pooling of Demand Uncertainty</h3>
 <p>Sharing the risk by aggregating supply/demand locations and pooling the customer demand. Let’s assume:</p>
 <ul>
 <li>1 centralized warehouse supplying iPhones to all of Germany</li>
@@ -457,7 +486,12 @@ $$ f(x) = sin(x) $$
 <li>increased shipping costs per unit</li>
 </ul>
 <p>So overall it can be said that in a market where: Individual shipping costs surcharges are low and response time is not elementary, centralized warehouses are rational. This can be seen with car dealers. Yes, they have cars on stock but mainly for demonstration purposes. A Toyota dealer doesn’t however store 10 identical models for customers to walk in and buy one.</p>
-<h3 id="correlation-effects-on-risk-pooling">Correlation Effects on Risk Pooling</h3>
+<h4 id="square-root-law-benetton-effect">Square-Root Law (“Benetton Effect”)</h4>
+<ul>
+<li>Decentralized safety stock <span class="math inline">\(= z\cdot\sigma_D\sqrt{L}\cdot n\)</span></li>
+<li>Centralized safety stock <span class="math inline">\(= z\cdot\sigma_D\sqrt{L}\cdot \sqrt{n}\)</span></li>
+</ul>
+<h3 id="correlation-effects-on-risk-pooling">8.2 Correlation Effects on Risk Pooling</h3>
 <p>Correlation Coefficients</p>
 <p><span class="math display">\[ p = \frac{\text{covariance}}{\sigma_1\sigma_2} = \frac{E[(D_1-\mu_1)(D_2-\mu_2)]}{\sigma_1\sigma_2} \]</span></p>
 <p>Now this obviously leads to covariance in between locations and, if demand is correlated, this needs to be taken into account. Statistics 101 so to speak.</p>
@@ -466,7 +500,7 @@ $$ f(x) = sin(x) $$
 <p><span class="math display">\[ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}\]</span></p>
 <p><img src="images/pascalwhoop/19.png" /></p>
 <p><em>It is nice to see that all we need to do for this course is understand: Newsvendor model, service level and covariance.</em></p>
-<h3 id="specific-form-of-aggregation">Specific Form of Aggregation:</h3>
+<h3 id="specific-form-of-aggregation">8.3 Specific Form of Aggregation</h3>
 <ul>
 <li>Information centralization</li>
 <li>Specialization</li>
@@ -475,18 +509,71 @@ $$ f(x) = sin(x) $$
 <li>Postponement</li>
 <li>System Design</li>
 </ul>
+<h4 id="system-design-flexibility">System Design Flexibility</h4>
 <p><img src="images/chovestadt/4.png" /></p>
 <p>This is of course obvious to a rational person. The question is however, how much does the Flexibility improvements cost the company? A $ 2 Mio. costly ERP system doesn’t benefit a shopkeep that owns 4 pasta shops. So the ahead of time investment cost for such a flexibility increasing setup always needs to be weighed against the expected savings.</p>
-<p>TODO: Chaining</p>
+<p><img src="images/chovestadt/18.png" /></p>
 <h2 id="chapter-9-strategic-risk-management-diversification-responsive-sourcing">Chapter 9: Strategic Risk Management: Diversification &amp; Responsive Sourcing</h2>
+<h3 id="matching-supply-demand-characteristics">9.1 Matching Supply &amp; Demand Characteristics</h3>
+<p><img src="images/chovestadt/19.png" /> <img src="images/chovestadt/20.png" /></p>
+<h3 id="operational-hedging-and-diversification">9.2 Operational Hedging and Diversification</h3>
+<h4 id="setting">Setting</h4>
+<ul>
+<li>Two resources (1) and (2) with contribution margins <span class="math inline">\(p_1 \geq p_2\)</span> and proportional capacity costs <span class="math inline">\(c_1, c_2\)</span>. Economies of scale are ignored.</li>
+<li>Probability distribution <span class="math inline">\(P\)</span> from which (uncertain) production capabilities and demands are drawn</li>
+</ul>
+<p><img src="images/chovestadt/21.png" /></p>
+<h4 id="strategy-options">Strategy options</h4>
+<ul>
+<li>1st stage strategy groups:
+<ul>
+<li><em>Operational Hedging Strategies</em> if <span class="math inline">\(Q_1 + Q_2 &gt; d\)</span></li>
+<li><em>Diversification Strategies</em> if <span class="math inline">\(Q_1 &gt; 0\)</span> and $Q_2 &gt; 0*</li>
+<li><em>Single Sourcing Strategies</em> if <span class="math inline">\(Q_1 = d\)</span> and <span class="math inline">\(Q_2 = 0\)</span> (or other way round)</li>
+</ul></li>
+<li>2nd stage: simple LP maximization problem</li>
+</ul>
+<h4 id="capacity-shadow-prices">Capacity Shadow Prices</h4>
+<p><img src="images/chovestadt/22.png" /></p>
+<h4 id="optimal-sourcing-strategies">Optimal Sourcing Strategies</h4>
+<p><img src="images/chovestadt/23.png" /></p>
+<h4 id="impact-of-correlation">Impact of correlation</h4>
+<ul>
+<li>Impact on optimal profit
+<ul>
+<li>Positive supply-demand correlation increases profit</li>
+<li>Positive inter-supply correlation decreases profit</li>
+<li>But: Supply hedges still valuable under perfectly correlated uncertainty</li>
+</ul></li>
+<li>Impact on optimal sourcing form:
+<ul>
+<li>Supply-demand correlation makes focal resource more attractive</li>
+<li>This does not imply restricted use of the other resource</li>
+</ul></li>
+<li>Impact on optimal allocation:
+<ul>
+<li>Under random capacity: lower-margin resource is used to adjust service level</li>
+<li>Under scale hedges (<span class="math inline">\(K_i = Q_i \cdot R_i\)</span>): Both resources are used to adjust service level</li>
+</ul></li>
+</ul>
+<h3 id="responsive-sourcing">9.3 Responsive Sourcing</h3>
+<h4 id="setting-1">Setting</h4>
+<p><img src="images/chovestadt/24.png" /></p>
+<h4 id="states-of-the-world">States of the World</h4>
+<p><img src="images/chovestadt/25.png" /></p>
+<h4 id="optimal-sourcing-strategies-1">Optimal Sourcing Strategies</h4>
+<p><img src="images/chovestadt/26.png" /></p>
+<h4 id="conclusion">Conclusion</h4>
+<p>The responsive supply determines the service level</p>
+<p>–&gt; Use cheap supplier for base load and cover demand variance with the responsive supplier</p>
 <h2 id="chapter-10-strategic-sourcing-supplier-relationships">Chapter 10: Strategic Sourcing &amp; Supplier Relationships</h2>
 <ul>
 <li>a small amount of savings in procurement may lead to a fairly large profit increase</li>
 <li>complexity through too much outsourcing vs. in-house complexity</li>
 </ul>
-<h3 id="make-or-buy-decisions">Make-or-buy decisions</h3>
+<h3 id="make-or-buy-decisions">10.1 Make-or-buy decisions</h3>
 <p><img src="images/pascalwhoop/27.png" /></p>
-<p><strong>Total cost of ownership (TCO)</strong></p>
+<p>####Total Cost of Ownership (TCO)</p>
 <ul>
 <li>TCO captures the entire lifetime of a product, not just aquisition (compare TLC)</li>
 <li>can be used to compare different suppliers with a holistic evaluation of their offers</li>
@@ -497,7 +584,13 @@ $$ f(x) = sin(x) $$
 <li>joint costs</li>
 </ul></li>
 </ul>
-<h3 id="supplier-relationships">Supplier-Relationships</h3>
+<h4 id="total-landed-cost-analysis-tlc-1">Total Landed Cost Analysis (TLC)</h4>
+<p>Total supply chain cost from origin to destination for a <em>given service level</em></p>
+<h3 id="supplier-relationships">10.2 Supplier-Relationships</h3>
+<ul>
+<li><em>Transactional</em> or <em>Market-based</em> supply arrangements: Emphasis on contracting</li>
+<li><em>Partnership</em> supply arrangements: Emphasis von relationships</li>
+</ul>
 <p><img src="images/pascalwhoop/28.png" /></p>
 <h4 id="the-nissan-case-research-discussion">The Nissan Case – Research Discussion</h4>
 <h4 id="responsive-sourcing-research-discussion">Responsive Sourcing – Research Discussion</h4>

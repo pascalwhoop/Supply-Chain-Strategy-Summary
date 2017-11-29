@@ -292,11 +292,13 @@ The simulation was very similar to the second paper of chapter 9, which looks at
 
 ## Chapter 7: Capacity Strategy
 
-The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the scope is "long term", the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of gitadditional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.
+The topic of this chapter is the process of deciding the long term requirements for capacity sizes as well as time and location. While the focus is "long term" (1-5+ years), the decision process for the size is very similar to that of the newsvendor problem. One has to evaluate both the costs that one incurrs in the case of an investment into new capacity and the expected benefits (income) one might get in return. This is abstracted by an expected demand distribution. The timing tradeoff is that of gitadditional demand distribution information (i.e. a smaller standard deviation) vs. the risk of lost sales opportunities while waiting. The location tradeoff is that of costs versus a service level fulfillment ability. The closer the manufacturing is, the easier it is to fulfill all demand, achieving a high service level.
 
-**Def: Capacity** in the static, physical sense, means the *scale* of an operation
+### 7.1 Capacity & Bottlenecks
 
-**Key determinants of capacity strategy include:**
+> **Def: Capacity** in the static, physical sense, means the *scale* of an operation
+
+#### Key determinants of capacity strategy include:
 
 -	Demand Growth Curve
 -	Demand Growth Curve
@@ -310,7 +312,7 @@ The topic of this chapter is the process of deciding the long term requirements 
 -	Customer Stickiness
 -	Competitor Actions
 
-**Capacity frictions:**
+#### Capacity frictions:
 
 -	Lead times
 -	Lumpiness
@@ -318,23 +320,25 @@ The topic of this chapter is the process of deciding the long term requirements 
 -	(Demand) Uncertainty
 -	Scale economics
 
-![](images/pascalwhoop/2.png)
+![](images/pascalwhoop/1.png)
+
+#### Performance Indicators
 
 -   **Bottleneck**: slowest process in system
 -   **Throughput**: Number of items that leave system per time University
 -   **Capacity**: max throughput of system
 
-### Forecasts
+### 7.2 Forecasting
 
-**Principle 1:** Always include in forecast derivation process
+**Principle 1:** Always include all predictions on the evolution of all factors:
 
--   Demand
--   Supply
--   Technology
-    -   new Technology
-    -   Learning & Improvements
--   cost of capacity
--   Strategic Uncertainty
+- Demand
+- Supply
+- Technology
+  - new Technology
+  - Learning & Improvements
+- cost of capacity
+- Strategic Uncertainty
 
 **Principle 2:** Always include uncertainty by time bucket
 
@@ -342,25 +346,25 @@ The topic of this chapter is the process of deciding the long term requirements 
 2. Multiple scenario forecast: allows for wider range of cases
 3. Full distribution: complex forecasting, best prediction capability
 
-**Consensus based forecasting** is the idea of asking several specialists for their opinion and let them come up with a number that everyone can agree on. This is dangerous, as it allows for human dynamics to nudge the number to something that does not resemble the actual statistical average of all individual estimates. Hence, it looses detail and information value.
+#### Consensus forecasting 
+The idea of asking several specialists for their opinion and let them come up with a number that everyone can agree on. This is dangerous, as it allows for human dynamics to nudge the number to something that does not resemble the actual statistical average of all individual estimates. Hence, it looses detail and information value.
 
-### Flexibility Categories
+### 7.3 Flexibility
 
 1. **Mix Flexibility**: Classic example is a 3D Printer. The ability to create several types of products / services with the same invest. Another example in the service environment would be a general consultant. The opposite would be someone highly specialised.
 2. **Volume Flexibility**: Allowing for (low cost) adaptation of the production rate, i.e. a low percentage of fixed costs per unit. A good example are the auto-scalling features of contemporary cloud services.
 3. **New Product Flexibility**: Ability of quickly incorporating new products into the chain and offering them to the market. One such example would be a company that runs a form of incubation lab in the software space. This lab would quickly experiment on possible new products and their viability in the market before incorporating them into the portfolio.
 
-### Capacity Strategy decisions: Size, Time and Location
+### 7.4 Capacity Strategy Decisions: Size, Time and Location
+
+#### Key Trade-off of Capacity Sizing
 
 ![](images/pascalwhoop/2.png)
 
--   If one produces too much, the produce must be stored
--   If one produces too little, the customers must waiting
--   If one has capacity but doesn't use it until it is required, the resources must wait
-
 Scale economies allow for reduced marginal cost with increasing total number of items produced. This may not only be due to the spreading of fixed cost but also from bulk orders leading to material cost reduction, learning processes, efficiency improvements etc.
 
-**Tools of the trade for Risk analysis**:
+#### Tools of the trade for Risk analysis:
+
 -   Scenario analysis: worst, expected, best case
     1. Determine Factors
     2. Determine Scenarios
@@ -371,7 +375,7 @@ Scale economies allow for reduced marginal cost with increasing total number of 
     -   Incorporates *decisions* in comparison to scenario analysis which expects a certain end result and then weighs the value of each.
 -   Simulation: complex computational models which are part of another lecture
 
-#### Capacity Time<->Size relationship
+#### Capacity Time <--> Size relationship
 ![](images/pascalwhoop/3.png)
 
 The question of *when* one adapts the capacity. This always includes a certain lag for the upgrade process during which demand can fluctuate. The larger the lag the greater the risk.
@@ -386,7 +390,14 @@ A hybrid of leading and lagging would achieve a mix of both worlds: One builds u
 
 ##### Capacity Risk: Real Options Steps
 
-??? Slide 40 TODO
+1. Draw decision tree
+   - Identify decisions (real options, squares)
+   - Identify uncertainties (circles)
+   - Identify sequence
+2. Quantify
+   - Identify probabilities
+   - Identify outcome values
+3. Work backwards
 
 ##### Location
 
@@ -411,7 +422,7 @@ There is a tradeoff point: the higher the service level of a company is set to b
 
 ## Chapter 8: Strategic Risk Management: Diversification & Risk Pooling
 
-### Risk Pooling of Demand Uncertainty
+### 8.1 Risk Pooling of Demand Uncertainty
 
 Sharing the risk by aggregating supply/demand locations and pooling the customer demand. Let's assume:
 
@@ -425,7 +436,12 @@ The differences in demand for separate regions require them to stock much more t
 
 So overall it can be said that in a market where: Individual shipping costs surcharges are low and response time is not elementary, centralized warehouses are rational. This can be seen with car dealers. Yes, they have cars on stock but mainly for demonstration purposes. A Toyota dealer doesn't however store 10 identical models for customers to walk in and buy one.
 
-### Correlation Effects on Risk Pooling
+#### Square-Root Law ("Benetton Effect")
+
+- Decentralized safety stock $= z\cdot\sigma_D\sqrt{L}\cdot n$
+- Centralized safety stock $= z\cdot\sigma_D\sqrt{L}\cdot \sqrt{n}$
+
+### 8.2 Correlation Effects on Risk Pooling
 
 Correlation Coefficients
 
@@ -443,7 +459,7 @@ $$ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}$$
 
 *It is nice to see that all we need to do for this course is understand: Newsvendor model, service level and covariance.*
 
-### Specific Form of Aggregation:
+### 8.3 Specific Form of Aggregation
 
 -   Information centralization
 -   Specialization
@@ -452,23 +468,81 @@ $$ \text{effectiveness} = 1 - \frac{\sigma_{pool}}{\sigma_1 + \sigma_2}$$
 -   Postponement
 -   System Design
 
+#### System Design Flexibility
 ![](images/chovestadt/4.png)
 
 This is of course obvious to a rational person. The question is however, how much does the Flexibility improvements cost the company? A $ 2 Mio. costly ERP system doesn't benefit a shopkeep that owns 4 pasta shops. So the ahead of time investment cost for such a flexibility increasing setup always needs to be weighed against the expected savings.
 
-TODO: Chaining
+![](images/chovestadt/18.png)
 
 ## Chapter 9: Strategic Risk Management: Diversification & Responsive Sourcing
+
+### 9.1 Matching Supply & Demand Characteristics
+
+![](images/chovestadt/19.png)
+![](images/chovestadt/20.png)
+
+### 9.2 Operational Hedging and Diversification
+
+#### Setting
+
+- Two resources (1) and (2) with contribution margins $p_1 \geq p_2$ and proportional capacity costs $c_1, c_2$. Economies of scale are ignored.
+- Probability distribution $P$ from which (uncertain) production capabilities and demands are drawn
+
+![](images/chovestadt/21.png)
+
+#### Strategy options
+- 1st stage strategy groups:
+  - *Operational Hedging Strategies* if $Q_1 + Q_2 > d$
+  - *Diversification Strategies* if $Q_1 > 0$ and $Q_2 > 0*
+  - *Single Sourcing Strategies* if $Q_1 = d$ and $Q_2 = 0$ (or other way round)
+- 2nd stage: simple LP maximization problem
+
+#### Capacity Shadow Prices
+![](images/chovestadt/22.png)
+
+#### Optimal Sourcing Strategies
+![](images/chovestadt/23.png)
+
+#### Impact of correlation
+
+- Impact on optimal profit
+  - Positive supply-demand correlation increases profit
+  - Positive inter-supply correlation decreases profit
+  - But: Supply hedges still valuable under perfectly correlated uncertainty
+- Impact on optimal sourcing form:
+  - Supply-demand correlation makes focal resource more attractive
+  - This does not imply restricted use of the other resource
+- Impact on optimal allocation:
+  - Under random capacity: lower-margin resource is used to adjust service level
+  - Under scale hedges ($K_i = Q_i \cdot R_i$): Both resources are used to adjust service level
+
+### 9.3 Responsive Sourcing
+
+#### Setting
+![](images/chovestadt/24.png)
+
+#### States of the World
+![](images/chovestadt/25.png)
+
+#### Optimal Sourcing Strategies
+![](images/chovestadt/26.png)
+
+#### Conclusion
+The responsive supply determines the service level
+
+--> Use cheap supplier for base load and cover demand variance with the responsive supplier
+
 ## Chapter 10: Strategic Sourcing & Supplier Relationships
 
 -   a small amount of savings in procurement may lead to a fairly large profit increase
 -   complexity through too much outsourcing vs. in-house complexity
 
-### Make-or-buy decisions
+### 10.1 Make-or-buy decisions
 
 ![](images/pascalwhoop/27.png)
 
-**Total cost of ownership (TCO)**
+####Total Cost of Ownership (TCO)
 
 -   TCO captures the entire lifetime of a product, not just aquisition (compare TLC)
 -   can be used to compare different suppliers with a holistic evaluation of their offers
@@ -477,7 +551,14 @@ TODO: Chaining
     -   internal costs
     -   joint costs
 
-### Supplier-Relationships
+#### Total Landed Cost Analysis (TLC)
+
+Total supply chain cost from origin to destination for a *given service level*
+
+### 10.2 Supplier-Relationships
+
+- *Transactional* or *Market-based* supply arrangements: Emphasis on contracting
+- *Partnership* supply arrangements: Emphasis von relationships
 
 ![](images/pascalwhoop/28.png)
 
